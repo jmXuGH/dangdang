@@ -1,0 +1,23 @@
+{
+  "id": "2003346",
+  "name": "dangdang",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "9626870",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e86e",
+      "unicode_decimal": 59502
+    },
+    {
+      "icon_id": "12975025",
+      "name": "购物车",
+      "font_class": "gouwuche1",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    }
+  ]
+}

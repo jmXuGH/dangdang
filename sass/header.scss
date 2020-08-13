@@ -1,0 +1,202 @@
+.header {
+    width: 100%;
+    font: 12px 'Hiragino Sans GB', "simsun", "Arial";
+    color: #646464;
+    min-width: 1200px;
+    background-color: #fff;
+
+    .header-box {
+        .tools-box {
+            width: 100%;
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #f2f2f2;
+            height: 34px;
+            line-height: 34px;
+            position: relative;
+            z-index: 10010;
+
+            .tools-con {
+                width: 1200px;
+                margin: 0 auto;
+                background-color: #f9f9f9;
+                height: 34px;
+
+                .tools {
+                    float: right;
+
+                    .ddnewhead_cart {
+                        background-image: none;
+
+                        i {
+                            float: left;
+                            width: 15px;
+                            height: 14px;
+                            background: url(../image/home_sprite2.png) no-repeat -40px -86px;
+                            overflow: hidden;
+                            margin: 3px 9px 0 0;
+                        }
+
+                        b {
+                            color: #ff2832;
+                            font: bold 12px "Arial";
+                        }
+                    }
+
+                    li {
+                        float: left;
+                        padding-top: 5px;
+                        height: 22px;
+                        line-height: 23px;
+                        position: relative;
+                        z-index: 100;
+                        background: url(../image/head_sprite.png) no-repeat left -284px;
+
+                        a.menu_btn {
+                            position: relative;
+                            padding-right: 27px;
+                            background: url(../image/head_sprite.png) no-repeat right -307px;
+                        }
+
+
+
+                        a {
+                            display: block;
+                            position: relative;
+                            line-height: 23px;
+                            padding: 0 7px 0 8px;
+                            color: #646464;
+                        }
+
+                        a.hover {
+                            background-color: #fff;
+                            background-position: right -320px;
+                            padding-top: 3px;
+                            margin: -4px -1px 0;
+                            border: 1px solid #e6e6e6;
+                            border-bottom: none;
+                            position: relative;
+                        }
+
+                        .sev-box {
+                            position: absolute;
+                            background-color: #fff;
+                            border: 1px solid #e6e6e6;
+                            border-top: none;
+                            left: -1px;
+                            top: 21px;
+                            padding: 4px 0 4px 0;
+                            display: none;
+
+                            li {
+                                background-image: none;
+                                float: none;
+                                height: 22px;
+                                line-height: 22px;
+                                padding: 0;
+                                width: 83px;
+                            }
+                        }
+
+
+                        a:hover {
+                            color: #ff2832;
+                        }
+
+                    }
+
+                    li:hover {
+                        z-index: 101;
+                    }
+
+                    .linwu {
+                        .sev-box {
+                            li {
+                                width: 77px;
+                            }
+                        }
+                    }
+                }
+
+                .ddnewhead_welcome {
+                    padding: 5px 0 0 10px;
+                    height: 24px;
+                    line-height: 24px;
+                    position: relative;
+                    float: right;
+                    z-index: 50;
+
+                    a {
+                        color: #646464;
+                    }
+
+                    .login_link {
+                        color: #ff2832;
+                        margin-right: 4px;
+                    }
+                }
+            }
+
+            .ddnewhead_area {
+                position: relative;
+                padding-top: 2px;
+                margin-right: -1px;
+                _margin-right: -10px;
+                z-index: 100;
+                font-family: arial, simsun;
+
+                .ddnewhead_area_a {
+                    display: block;
+                    _display: inline-block;
+                    position: relative;
+                    line-height: 22px;
+                    height: 22px;
+                    background: url(../image/head_sprite.png) no-repeat right -303px;
+                    padding: 4px 22px 0 9px;
+                    color: #646464;
+                    z-index: 10;
+                }
+
+                a.hover {
+                    background-color: #fff;
+                    background-position: right -320px;
+                    // padding-top: 3px;
+                    margin: -1px -1px 0;
+                    border: 1px solid #e6e6e6;
+                    border-bottom: none;
+                    position: relative;
+                }
+
+                .address-box {
+                    position: absolute;
+                    top: 27px;
+                    width: 50px;
+                    background-color: #fff;
+                    min-height: 100px;
+                    border: 1px solid #e6e6e6;
+                    width: 298px;
+                    padding: 10px 0 10px 10px;
+                    display: none;
+                    left: -1px;
+
+                    li {
+                        background: none;
+                        float: left;
+                        width: 48px;
+                        height: 26px;
+                        line-height: 26px;
+                        padding: 0 0 0 10px;
+                        position: relative;
+                        z-index: 100;
+
+                        a {
+                           color:#646464;
+                        }
+                        a:hover{
+                            color: #ff2832;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
