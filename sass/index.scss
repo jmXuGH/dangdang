@@ -82,7 +82,7 @@
     width: 1200px;
     margin: 0 auto;
     min-height: 300px;
-    background-color: palegoldenrod;
+    // background-color: palegoldenrod;
 
     .left_con {
         .new_pub_nav {
@@ -100,7 +100,7 @@
                 color: #323232;
                 font: 14px/30px "Microsoft Yahei";
                 position: relative;
-                z-index: 1px;
+                z-index: 100px;
                 vertical-align: top;
                 color: #323232;
 
@@ -122,6 +122,10 @@
                 a {
                     color: #ff2832;
                     font: 16px/30px "Microsoft Yahei";
+                }
+
+                a:hover {
+                    text-decoration: underline;
                 }
             }
         }
@@ -248,6 +252,31 @@
                     height: 29px;
                     overflow: hidden;
                     width: 204px;
+
+                    li {
+                        margin-left: -2px;
+                        float: left;
+                        width: 101px;
+                        border: 1px solid #e6e6e6;
+                        border-top: 0;
+                        height: 28px;
+                        background-color: #f0f0f0;
+                        cursor: default;
+                        font: 14px/29px "Microsoft Yahei";
+                        text-align: center;
+                        color: #646464;
+                        overflow: hidden;
+
+                        a {
+                            color: #646464;
+                        }
+                    }
+
+                    .on {
+                        background-color: #fff;
+                        border-bottom: 0;
+                        padding-bottom: 1px;
+                    }
                 }
             }
 
@@ -263,8 +292,37 @@
                     width: 202px;
                     overflow: hidden;
                     padding-top: 6px;
-                    background-color: palegreen;
                 }
+
+                ul {
+                    height: 130px;
+                    width: 202px;
+                    overflow: hidden;
+                    padding-top: 6px;
+
+                    li {
+                        line-height: 25px;
+                        padding-left: 10px;
+                        width: 183px;
+                        height: 25px;
+                        background: url(http://img60.ddimg.cn/upload_img/00111/home/home_sprite_1507.png) no-repeat 10px -188px;
+                        overflow: hidden;
+
+                        a {
+                            display: block;
+                            padding-left: 10px;
+                            color: #646464;
+                            font-family: "Microsoft Yahei";
+                        }
+                        a:hover{
+                            color: #ff2832;
+                        }
+                    }
+                }
+                .waring a{
+                    color: #ff2832;
+                }
+
 
             }
 
@@ -277,11 +335,12 @@
             /* 设置前后按钮字体大小 */
             --swiper-navigation-size: 25px;
             position: relative;
-            
+
             .swiper-pagination-bullet-active {
                 color: #fff;
                 background: #ff2832;
             }
+
             .swiper-button-prev,
             .swiper-button-next {
                 background: #000;

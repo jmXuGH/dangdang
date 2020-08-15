@@ -2,7 +2,9 @@ import './lib/jquery-2.1.4.js';
 /* 引入swiper */
 import './lib/swiper.js';
 
-
+/*渲染轮播图左侧菜单 */
+import fenlei from './modules/index_mod/fenlei.js'
+fenlei();
 
 
 $(function () {
@@ -32,7 +34,7 @@ $(function () {
 
     // 轮播图前进后退按钮
 
-   
+
 })
 
 
@@ -75,18 +77,29 @@ var mySwiper = new Swiper('.swiper-container1', {
 
 
 //鼠标覆盖停止自动切换与隐藏前进后退按钮
-mySwiper.el.onmouseenter = function () {
-    $('.swiper-container1 .swiper-button-prev').stop().animate({ left: 0 }, 'normal')
-    $('.swiper-container1 .swiper-button-next').stop().animate({ right: 0 }, 'normal')
-}
+// mySwiper.el.onmouseenter = function () {
+//     $('.swiper-container1 .swiper-button-prev').stop().animate({ left: 0 }, 'normal')
+//     $('.swiper-container1 .swiper-button-next').stop().animate({ right: 0 }, 'normal')
+// }
 //鼠标覆盖停止自动切换与隐藏前进后退按钮
-mySwiper.el.onmouseleave = function () {
-    $('.swiper-container1 .swiper-button-prev').stop().animate({ left: -33 }, 'normal')
-    $('.swiper-container1 .swiper-button-next').stop().animate({ right: -33 }, 'normal')
-}
+// mySwiper.el.onmouseleave = function () {
+//     $('.swiper-container1 .swiper-button-prev').stop().animate({ left: -33 }, 'normal')
+//     $('.swiper-container1 .swiper-button-next').stop().animate({ right: -33 }, 'normal')
+// }
+
+$(mySwiper.el).hover(
+    function () {
+        $('.swiper-container1 .swiper-button-prev').stop().animate({ left: 0 }, 'normal')
+        $('.swiper-container1 .swiper-button-next').stop().animate({ right: 0 }, 'normal')
+    },
+    function () {
+        $('.swiper-container1 .swiper-button-prev').stop().animate({ left: -33 }, 'normal')
+        $('.swiper-container1 .swiper-button-next').stop().animate({ right: -33 }, 'normal')
+    }
+ );
 
 
-
+ 
 /* 轮播图2 */
 var mySwiper2 = new Swiper('.swiper-container2', {
     // direction: 'vertical', // 垂直切换选项
@@ -158,3 +171,4 @@ mySwiper3.el.onmouseleave = function () {
     $('.swiper-container3 .swiper-button-prev').stop().animate({ left: -33 }, 'normal')
     $('.swiper-container3 .swiper-button-next').stop().animate({ right: -33 }, 'normal')
 }
+
