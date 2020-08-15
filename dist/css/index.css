@@ -53,8 +53,10 @@
 /* 导航栏样式结束*/
 .home_first_screen {
   width: 1200px;
+  height: 508px;
   margin: 0 auto;
-  min-height: 300px; }
+  min-height: 300px;
+  padding-bottom: 20px; }
   .home_first_screen .left_con .new_pub_nav {
     float: left;
     width: 200px;
@@ -249,3 +251,42 @@
       .home_first_screen .con_right .notice_r_banner img {
         width: 202px;
         height: 119px; }
+
+.miaosha_box {
+  width: 1200px;
+  margin: 0 auto; }
+  .miaosha_box .con_left_box {
+    padding-bottom: 20px;
+    height: 508px;
+    width: 1200px;
+    background-color: palegreen; }
+    .miaosha_box .con_left_box .miaosha_head {
+      height: 39px;
+      border-bottom: 3px solid #3c3c3c;
+      background-color: #fff; }
+      .miaosha_box .con_left_box .miaosha_head .time {
+        float: left;
+        background: url(../image/home_miaosha.png) no-repeat 83px 0;
+        height: 39px;
+        padding-left: 113px;
+        position: relative;
+        font: 14px "微软雅黑"; }
+        .miaosha_box .con_left_box .miaosha_head .time a {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 83px;
+          height: 39px;
+          overflow: hidden; }
+          .miaosha_box .con_left_box .miaosha_head .time a img {
+            left: 0;
+            height: 39px;
+            width: 64px; }
+        .miaosha_box .con_left_box .miaosha_head .time span {
+          height: 24px;
+          line-height: 24px;
+          padding: 5px 20px 0 0;
+          text-align: center;
+          width: 26px;
+          overflow: hidden; }

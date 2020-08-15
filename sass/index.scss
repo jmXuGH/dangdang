@@ -80,8 +80,10 @@
 
 .home_first_screen {
     width: 1200px;
+    height: 508px;
     margin: 0 auto;
     min-height: 300px;
+    padding-bottom: 20px;
     // background-color: palegoldenrod;
 
     .left_con {
@@ -314,12 +316,14 @@
                             color: #646464;
                             font-family: "Microsoft Yahei";
                         }
-                        a:hover{
+
+                        a:hover {
                             color: #ff2832;
                         }
                     }
                 }
-                .waring a{
+
+                .waring a {
                     color: #ff2832;
                 }
 
@@ -363,6 +367,63 @@
                 width: 202px;
                 height: 119px;
             }
+        }
+    }
+}
+
+
+.miaosha_box {
+    width: 1200px;
+    margin: 0 auto;
+
+    .con_left_box {
+        padding-bottom: 20px;
+        height: 508px;
+        width: 1200px;
+        background-color: palegreen;
+
+        .miaosha_head {
+            height: 39px;
+            border-bottom: 3px solid #3c3c3c;
+            background-color: #fff;
+
+            .time {
+                float: left;
+                background: url(../image/home_miaosha.png) no-repeat 83px 0;
+                height: 39px;
+                padding-left: 113px;
+                position: relative;
+                font: 14px "微软雅黑";
+
+                a {
+                    display: block;
+
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 83px;
+                    height: 39px;
+                    overflow: hidden;
+
+                    img {
+
+                        left: 0;
+                        height: 39px;
+                        width: 64px;
+                    }
+                    
+                }
+                span{
+                    height: 24px;
+                    line-height: 24px;
+                    padding: 5px 20px 0 0;
+                    text-align: center;
+                    width: 26px;
+                    overflow: hidden;
+                }
+
+            }
+
         }
     }
 }
