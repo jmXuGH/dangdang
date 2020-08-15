@@ -6,6 +6,8 @@
     background-color: #fff;
 
     .header-box {
+
+        /* 顶部导航栏样式开始*/
         .tools-box {
             width: 100%;
             background-color: #f9f9f9;
@@ -199,14 +201,19 @@
                     }
                 }
             }
+            /* 顶部导航栏样式结束*/
         }
 
+        
+
+        /* 搜索栏和logo栏样式开始*/
         .logo_line_out {
             width: 1200px;
             margin: 0 auto;
             background-color: #fff;
             position: relative;
             height: 100px;
+
             .log-box {
                 float: left;
 
@@ -248,6 +255,8 @@
                         background: none;
                     }
 
+                    /* 搜索框下拉样式开始*/
+
                     .select {
                         position: absolute;
                         top: 0px;
@@ -272,7 +281,8 @@
                             top: 16px;
                         }
                     }
-                    .select_pop{
+
+                    .select_pop {
                         width: 104px;
                         height: 288px;
                         border: 1px solid #dedede;
@@ -283,26 +293,31 @@
                         z-index: 101;
                         overflow: auto;
                         display: none;
-                        a{
+
+                        a {
                             display: block;
                             height: 24px;
                             padding: 0 5px 0 15px;
                             text-decoration: none;
-                            font: 12px/24px 'Hiragino Sans GB',"simsun";
+                            font: 12px/24px 'Hiragino Sans GB', "simsun";
                             color: #646464;
                         }
-                        a:hover{
+
+                        a:hover {
                             background-color: #c8c8c8;
-                            color:#fff;
+                            color: #fff;
                             text-decoration: underline;
                         }
                     }
                 }
 
-                .select:hover .select_pop{
+                .select:hover .select_pop {
                     display: block;
                 }
 
+                /* 搜索框下拉样式结束*/
+
+                // 搜索按钮 样式
                 .btn {
                     width: 48px;
                     height: 40px;
@@ -315,6 +330,7 @@
                 }
             }
 
+            /* 搜索热搜样式开始*/
             .search-bottom {
                 position: absolute;
                 top: 45px;
@@ -345,8 +361,12 @@
                     float: left;
                     color: #969696;
                 }
+
+                /* 搜索热搜样式结束*/
+
             }
 
+            /* 购物车按钮样式开始*/
             .cart_box {
                 .ddnew_cart {
                     width: 107px;
@@ -376,8 +396,12 @@
                 .ddnew_cart:hover a {
                     color: #ff2832;
                 }
+
+                /* 购物车按钮样式结束*/
             }
 
+
+            /* 我的订单按钮样式开始*/
             .ddnew_order {
                 width: 86px;
                 padding: 0;
@@ -397,9 +421,14 @@
                     color: #646464;
                 }
             }
-            .ddnew_order:hover a{
+
+            .ddnew_order:hover a {
                 color: #ff2832;
             }
+
+            /* 我的订单按钮样式结束*/
         }
     }
+
+    /* 搜索栏和logo栏样式结束*/
 }

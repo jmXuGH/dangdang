@@ -25,5 +25,8 @@
     "gulp-sass": "^4.1.0",
     "gulp-sass-china": "^3.1.0",
     "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "swiper": "^6.1.1"
   }
 }

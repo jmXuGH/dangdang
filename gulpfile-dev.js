@@ -19,7 +19,7 @@ task('image', async () => {
 
 // 处理sass
 task('sass', async () => {
-  src('./sass/*.scss')
+  src('./sass/**/*.scss')
     .pipe(load.sass())
     .pipe(dest('./dist/css'))
     .pipe(load.connect.reload())

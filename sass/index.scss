@@ -1,19 +1,309 @@
+// 顶部广告图样式
+
 .ad_bar_top {
     width: 100%;
     overflow: hidden;
     height: 300px;
+
     .ad_img_box {
         margin: 0 auto;
         width: 1200px;
-        img{
+
+        img {
             height: 300px;
             width: 1200px;
         }
     }
 }
-#index_content{    
-    position: relative;
+
+/* 导航栏样式开始*/
+.nav_top {
+    width: 100%;
+    height: 40px;
+    border-bottom: 3px solid #ff2832;
+
+    ul {
+        width: 1200px;
+        margin: 0 auto;
+
+
+        li.all {
+            width: 200px;
+            margin-right: 17px;
+            text-align: left;
+            background: #ff2832;
+            position: relative;
+            padding: 0;
+
+            a {
+                padding: 0 0 0 20px;
+                display: block;
+                width: 171px;
+                background: url(http://img63.ddimg.cn/upload_img/00459/home/head_sprite.png) no-repeat 161px -567px;
+                color: #fff;
+            }
+
+            a:hover {
+                color: #fff;
+            }
+        }
+
+        li {
+            float: left;
+            text-align: center;
+            height: 40px;
+            padding: 0 15px;
+            line-height: 40px;
+
+            a {
+                display: block;
+                color: #323232;
+                font: 14px/40px "Microsoft Yahei";
+                font-weight: normal;
+                text-decoration: none;
+                display: block;
+                font-weight: bold;
+            }
+
+            a:hover {
+                color: #ff2832;
+            }
+        }
+    }
+
 }
-.nav_top{
-    
+
+/* 导航栏样式结束*/
+
+
+// 商品分类与轮播图开始
+
+.home_first_screen {
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 300px;
+    background-color: palegoldenrod;
+
+    .left_con {
+        .new_pub_nav {
+            float: left;
+            width: 200px;
+            background-color: #fafafa;
+            position: relative;
+            z-index: 40;
+            padding: 4px 0;
+            height: 480px;
+
+            li {
+                height: 30px;
+                padding-left: 18px;
+                color: #323232;
+                font: 14px/30px "Microsoft Yahei";
+                position: relative;
+                z-index: 1px;
+                vertical-align: top;
+                color: #323232;
+
+                a {
+                    color: #323232;
+                    font: 14px/32px "Microsoft Yahei";
+                }
+            }
+
+            li.on {
+                background: #fff;
+                color: #F07828;
+                z-index: 10;
+                margin: -2px -1px -2px 0;
+                padding: 0 1px 0 16px;
+                border: 2px solid #ff2832;
+                border-right: 0;
+
+                a {
+                    color: #ff2832;
+                    font: 16px/30px "Microsoft Yahei";
+                }
+            }
+        }
+    }
+
+    .banner_box {
+        width: 796px;
+        overflow: hidden;
+        border-bottom: 1px solid #e6e6e6;
+        border-right: 1px solid #eaecee;
+
+        .swiper-container1 {
+            width: 796px;
+            height: 326px;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            /* 设置前后按钮字体大小 */
+            --swiper-navigation-size: 25px;
+
+            /* 设置按钮大小 */
+            .swiper-pagination-bullet {
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                line-height: 20px;
+                color: #fff;
+                opacity: 1;
+                background: #646464;
+
+
+            }
+
+            .swiper-pagination-bullet-active {
+                color: #fff;
+                background: #ff2832;
+            }
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                background: #000;
+                opacity: 0.3;
+                width: 33px;
+                height: 70px;
+                color: #fafafa;
+                font-size: 12px;
+            }
+
+            .swiper-button-prev {
+                left: -33px;
+            }
+
+            .swiper-button-next {
+                right: -33px;
+            }
+
+            img {
+                display: block;
+                width: 796px;
+                height: 326px;
+            }
+
+        }
+
+        .banner_top_img_box2 {
+            position: relative;
+            width: 796px;
+            height: 160px;
+            padding: 0;
+            margin: 0;
+            border-top: 1px solid #fff;
+            border-left: 1px solid #fff;
+            overflow: hidden;
+            /* 设置前后按钮字体大小 */
+            --swiper-navigation-size: 25px;
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                background: #000;
+                opacity: 0.3;
+                width: 30px;
+                height: 43px;
+                color: #fafafa;
+                font-size: 12px;
+            }
+
+            .swiper-button-prev {
+                left: -30px;
+            }
+
+            .swiper-button-next {
+                right: -30px;
+            }
+
+            .swiper-slide {
+                img {
+                    display: block;
+                    float: left;
+                    width: 198px;
+                    height: 160px;
+                    border-right: 1px solid #e6e6e6;
+                }
+            }
+        }
+    }
+
+    .con_right {
+        float: left;
+        width: 202px;
+        border-bottom: 1px solid #e6e6e6;
+        border-right: 1px solid #e6e6e6;
+
+        img {
+            display: block;
+            width: 202px;
+            height: 195px;
+        }
+
+        .notice_r_mid {
+            .tab {
+                ul {
+                    border-top: 1px solid #e6e6e6;
+                    height: 29px;
+                    overflow: hidden;
+                    width: 204px;
+                }
+            }
+
+            .con_box {
+                width: 202px;
+                height: 142px;
+                position: relative;
+                border-bottom: 1px solid #e6e6e6;
+                overflow: hidden;
+
+                .con_txt {
+                    height: 130px;
+                    width: 202px;
+                    overflow: hidden;
+                    padding-top: 6px;
+                    background-color: palegreen;
+                }
+
+            }
+
+        }
+
+        .notice_r_banner {
+            width: 202px;
+            height: 119px;
+            overflow: hidden;
+            /* 设置前后按钮字体大小 */
+            --swiper-navigation-size: 25px;
+            position: relative;
+            
+            .swiper-pagination-bullet-active {
+                color: #fff;
+                background: #ff2832;
+            }
+            .swiper-button-prev,
+            .swiper-button-next {
+                background: #000;
+                opacity: 0.3;
+                width: 30px;
+                height: 43px;
+                color: #fafafa;
+                font-size: 12px;
+            }
+
+            .swiper-button-prev {
+                left: -30px;
+            }
+
+            .swiper-button-next {
+                right: -30px;
+            }
+
+            img {
+                width: 202px;
+                height: 119px;
+            }
+        }
+    }
 }
