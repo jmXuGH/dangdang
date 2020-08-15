@@ -1,0 +1,13 @@
+.ad_bar_top {
+  width: 100%;
+  overflow: hidden;
+  height: 300px; }
+  .ad_bar_top .ad_img_box {
+    margin: 0 auto;
+    width: 1200px; }
+    .ad_bar_top .ad_img_box img {
+      height: 300px;
+      width: 1200px; }
+
+#index_content {
+  position: relative; }

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仿当当首页</title>
+    <link href="../image/favicon.ico" rel="icon" type="image/x-ico">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+
+<body>
+    <!-- 头部导航栏及logo和二级导航栏开始 -->
+    <div class="header">
+        <div class="header-box clearBoth">
+            <div class="tools-box clearBoth">
+                <div class="tools-con hover">
+                    <ul class="tools">
+                        <li class="ddnewhead_cart"><a href=""><i class=""></i>购物车<b>0</b></a></li>
+                        <li><a href="">我的订单</a></li>
+                        <li><a href="">我的云书房</a></li>
+                        <li class="menu_box"><a class="menu_btn" href="">我的当当</a>
+                            <ul class="sev-box">
+                                <li><a href="">银铃铛抵现</a></li>
+                                <li><a href="">我的收藏</a></li>
+                                <li><a href="">我的余额</a></li>
+                                <li><a href="">我的评论</a></li>
+                                <li><a href="">礼券/礼品卡</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu_box linwu"><a class="menu_btn" href="">0元领物</a>
+                            <ul class="sev-box">
+                                <li><a href="">0元领物</a></li>
+                                <li><a href="">当当拼团</a></li>
+                                <li><a href="">1元砍价</a></li>
+                                <li><a href="">1分抽奖</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">小说投稿</a></li>
+                        <li><a href="">我要出书</a></li>
+                        <li class="menu_box"><a class="menu_btn" href="">企业采购</a>
+                            <ul class="sev-box">
+                                <li><a href="">大宗采购</a></li>
+                                <li><a href="">礼品卡采购</a></li>
+                                <li><a href="">礼品卡激活</a></li>
+                                <li><a href="">礼品卡使用</a></li>
+                                <li><a href="">分销/荐购</a></li>
+                                <li><a href="">礼品卡专区</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu_box"><a class="menu_btn" href="">客户服务</a>
+                            <ul class="sev-box">
+                                <li><a href="">帮助中心</a></li>
+                                <li><a href="">自助退换货</a></li>
+                                <li><a href="">自助发票</a></li>
+                                <li><a href="">联系客服</a></li>
+                                <li><a href="">我要投诉</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="ddnewhead_welcome float-r">
+                        <span>欢迎光临当当，请
+                            <a class="login_link" href="">登录</a>
+                            <a href="">成为会员</a></span>
+                    </div>
+                    <div class="ddnewhead_area float-l">
+                        <a class="ddnewhead_area_a" href="">送至:
+                            <span class="curent_area">广东</span></a>
+                        <ul class="address-box">
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="logo_line_out clearBoth">
+                <div class="log-box">
+                    <a href=""><img src="../image/DDlogoNEW.gif" alt=""></a>
+                </div>
+                <div class="search-box">
+                    <div class="search-ipt-con">
+                        <span class="search-placeholder">一往无前</span>
+                        <input class="search-ipt" type="text">
+                        <span class="select"><span>全部分类</span> <span class="icon"></span>
+                            <div class="select_pop">
+                                    <a href="javascript:void(0);" onclick="selectCategory('100000',this);"
+                                        dd_name="尾品汇"><span>尾品汇</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory('01.00.00.00.00.00',this);"
+                                        dd_name="图书"><span>图书</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory('98.00.00.00.00.00',this);"
+                                        dd_name="电子书"><span>电子书</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory('03.00.00.00.00.00',this);"
+                                        dd_name="音像"><span>音像</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory('05.00.00.00.00.00',this);"
+                                        dd_name="影视"><span>影视</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory(4002074,this);"
+                                        dd_name="时尚美妆"><span>时尚美妆</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory(4001940,this);"
+                                        dd_name="母婴用品"><span>母婴用品</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory(4002061,this);"
+                                        dd_name="玩具"><span>玩具</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory(4004866,this);"
+                                        dd_name="孕婴服饰"><span>孕婴服饰</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory(4004344,this);"
+                                        dd_name="童装童鞋"><span>童装童鞋</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory(4003900,this);"
+                                        dd_name="家居日用"><span>家居日用</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory(4003760,this);"
+                                        dd_name="家具装饰"><span>家具装饰</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory(4003844,this);"
+                                        dd_name="服装"><span>服装</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory(4003872,this);"
+                                        dd_name="鞋"><span>鞋</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory(4001829,this);"
+                                        dd_name="箱包皮具"><span>箱包皮具</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory(4003639,this);"
+                                        dd_name="手表饰品"><span>手表饰品</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory(4003728,this);"
+                                        dd_name="运动户外"><span>运动户外</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory(4002429,this);"
+                                        dd_name="汽车用品"><span>汽车用品</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory(4002145,this);"
+                                        dd_name="食品"><span>食品</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory(4006497,this);"
+                                        dd_name="手机通讯"><span>手机通讯</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory(4003613,this);"
+                                        dd_name="数码影音"><span>数码影音</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory(4003819,this);"
+                                        dd_name="电脑办公"><span>电脑办公</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory(4007241,this);"
+                                        dd_name="大家电"><span>大家电</span></a>
+                                    <a href="javascript:void(0);" onclick="selectCategory(4001001,this);"
+                                        dd_name="家用电器"><span>家用电器</span></a>
+                                
+                            </div>
+                        </span>
+                        <input class="btn" type="button">
+
+                    </div>
+                    <div class="search-bottom clearBoth">
+                        <div class="seach-hot">
+                            <span>热搜</span>
+                            <a href="">莫言晚熟的人</a>
+                            <a href="">有趣的鲸豚</a>
+                            <a href="">学生文具</a>
+                            <a href="">小王子中英对照</a>
+                            <a href="">唐狮</a>
+                            <a href="">秒杀1元抢</a>
+                        </div>
+                        <a href="" class="search_advs">高级搜索</a>
+                    </div>
+
+                </div>
+                <div class="cart_box">
+                    <div class="ddnew_cart">
+                        <a href="">
+                            <span>购物车</span>
+                            <b>0</b>
+                        </a>
+                    </div>
+                    <div class="ddnew_order">
+                        <a href="">我的订单</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部导航栏及logo和二级导航栏结束 -->
+
+    <script src="../js/modules/index_mod/header.js"></script>
+</body>
+
+</html>
