@@ -1,0 +1,18 @@
+
+[
+    {
+        "leftList": {
+            "titList": [
+                "服装馆",
+                "内衣"
+            ],
+            "list": {
+                "tit": "女装",
+                "listCon": []
+            }
+        },
+        "rightImg": {
+            "isTrue": true
+        }
+    }
+]

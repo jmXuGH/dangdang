@@ -14,15 +14,16 @@ export default function () {
             $('.new_pub_nav').append(newLi);
 
         })
-        $('.new_pub_nav li').on('mouseenter', function (e) {
+        var pre = 0;
+        $('.home_first_screen').on('mouseenter','.new_pub_nav li', function (e) {
             e.preventDefault();
+          $($('.new_pub_nav li')[pre]).removeClass('on');
             $(this).addClass('on');
-
+            pre = $(this).index(); 
         })
-        $('.new_pub_nav li').on('mouseleave', function (e) {
+        $('.home_first_screen').on('mouseleave', function (e) {
             e.preventDefault();
-            $(this).removeClass('on');
-
+          $($('.new_pub_nav li')[pre]).removeClass('on');
         })
     }, 'json')
 
@@ -32,8 +33,8 @@ export default function () {
      */
     var tabTag = false;
     var timer1 = null;
-    function autoTurn(){
-         timer1 = setInterval(function () {
+    function autoTurn() {
+        timer1 = setInterval(function () {
             if (tabTag) {
                 tab_1()
             } else {
@@ -70,6 +71,8 @@ export default function () {
         tabTag = true;
         autoTurn();
     }
+
+
 
 
 
