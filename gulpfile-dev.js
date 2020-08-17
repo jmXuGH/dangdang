@@ -46,12 +46,14 @@ task('modules', async () => {
     .pipe(load.connect.reload())
 })
 
-// 处理lib
+// 处理JS lib
 task('lib', async ()=>{
   src('./js/lib/*.js')
   .pipe(dest('./dist/js/lib'))
   .pipe(load.connect.reload())
 })
+
+
 
 // 处理json
 task('json', async () => {

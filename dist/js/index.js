@@ -151,11 +151,8 @@ var mySwiper3 = new Swiper('.swiper-container3', {
     // 分页器
     pagination: {
         el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-            return '<span class="' + className + '"></span>';
-        },
-    },
+        clickable: true
+    }
 })
 
 //鼠标覆盖停止自动切换与隐藏前进后退按钮
@@ -185,22 +182,24 @@ function GetNextDate(time) {
     var m = time.getMonth() + 1;
 
     var d = time.getDate();
+    
     var h = time.getHours()
 
     var futureHour = '0:00:00';
     switch (true) {
         case 0 <= h && h < 11:
-            futureHour = '0:00:00';
+            futureHour = '11:00:00';
             $('.list_3 a').removeClass('now');
             $('.list_1 a').addClass('now');
             break;
         case 11 <= h && h < 16:
-            futureHour = '11:00:00';
+            futureHour = '16:00:00';
             $('.list_1 a').removeClass('now');
             $('.list_2 a').addClass('now');
             break;
         case 16 <= h && h < 24:
             futureHour = '0:00:00';
+            d++;
             $('.list_2 a').removeClass('now');
             $('.list_3 a').addClass('now');
             break;
@@ -208,11 +207,9 @@ function GetNextDate(time) {
     var t = y + "-" + m + "-" + d + " " + futureHour;
 
     var tDate = new Date(Date.parse(t.replace(/-/g, "/")));
-
-    tDate = + tDate + 24 * 60 * 60 * 1000;
+    // tDate = + tDate + 24 * 60 * 60 * 1000;
 
     tDate = new Date(tDate);
-
     return tDate;
 
 }
@@ -241,3 +238,58 @@ function GetNextDate(time) {
     }, 1000)
 })()
 
+
+
+/* 渲染秒杀商品 */
+
+$.get('../data/msList.json', '',function (data) {
+    // console.log(data);
+    $.each(data,function(i,l){
+       var good_con = `<div class="goods_con">
+        <a class="pic" href="">
+            <img src="../image/${l.imgSrc}" alt="">
+        </a>
+        <div class="line">
+            <div class="ms_prog_bar" style="width:${l.progress*100}%;"></div>
+            <div class="ms_num_bg"></div>
+        </div>
+        <div class="per_num">已秒杀<b>${l.progress*100}</b>%</div>
+        <div class="name">
+            <a href="">${l.msg}</a>
+        </div>
+        <div class="price_box">
+            <span>秒杀价：¥</span>
+            <span class="charge">${l.price}</span>
+            <span class="del">${l.del}</span>
+        </div>
+    </div>`
+    $(".left_goods_box").append(good_con)
+    })
+})
+
+
+
+var mySwipercs = new Swiper ('.swiper-cs', {
+    // direction: 'vertical', // 垂直切换选项
+    loop: true, // 循环模式选项
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    loop: true, // 循环模式选项
+    autoplay: {
+        delay: 3000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+    },
+    effect: 'fade',
+    fade: {
+        crossFade: true,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    }
+  })        

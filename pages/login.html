@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录-当当网</title>
+    <link href="../image/favicon.ico" rel="icon" type="image/x-ico">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+</head>
+
+<body>
+    <div class="mask">
+        
+    </div>
+    <div class="warning">
+        <h3>安全提醒</h3>
+        <span class="right">当当平台及销售商<b>不会以任何理由，要求您点击任何网址链接进行退款或支付操作。</b>当当客服电话400-106-6666，0527-80878888。</span>
+        <div class="loginMaskbtn"><a id="loginMaskClose" href="javascript:void(0);">知道了</a></div>
+    </div>
+
+
+    <div class="header">
+        <a href="./index.html">
+            <img src="../image/logo.png">
+        </a>
+        <div class="improve">
+            <span class="icon"></span>
+            <a class="info" href="http://survey.dangdang.com/html/2526.html" target="_blank">“登录页面“改进建议</a>
+        </div>
+    </div>
+
+    <div class="login_bg">
+        <div class="set_area">
+            <div class="wrap clearfix">
+                <div class="new_tip">
+                    <div>
+                        <span>请勿设置与邮箱及其他网站相同的登录及支付密码，</span>
+                        <a href="http://blog.dangdang.com/?p=22276">谨防诈骗!</a>
+                    </div>
+                </div>
+                <div class="login_box">
+                    <div class="switch_btn">
+                        <div class="hd">
+                            <a class="switch start" href="javascript:void(0);" style="display: block;"></a>
+                        </div>
+                    </div>
+                    <div class="info_remind">
+                        <div class="info">
+                            <span class="safe_icon" style="display: inline-block;"></span>
+                            <span id="J_startTip" style="display: inline;">扫码登录更安全</span>
+                            <span class="arrow_icon"></span>
+                        </div>
+                    </div>
+                    <p class="password_login">密码登录</p>
+                    <div class="ipt_box">
+                        <div class="username clearBoth">
+                            <i></i>
+                            <input type="text" class="user">
+                            <a class="text_del" id="clearUsername" href="javascript:void(0);"
+                                style="display: block;"></a>
+                            <span class="placeholder"
+                                style="background: none; position: absolute; z-index: 20; color: rgb(176, 176, 176); width: 270px; height: 34px; font-size: 13.3333px; padding-left: 0px; font-family: &quot;Microsoft Yahei&quot;; top: 0px; left: 40px; line-height: 34px; display: block;">邮箱/昵称/手机号码</span>
+                        </div>
+                        <p class="tips" id="user_mindstyle"></p>
+                        <div class="password">
+                            <i></i>
+                            <input type="text" class="pass">
+                            <a class="text_del" id="clearUsername" href="javascript:void(0);"
+                                style="display: block;"></a>
+                            <span class="placeholder"
+                                style="background: none; position: absolute; z-index: 20; color: rgb(176, 176, 176); width: 270px; height: 34px; font-size: 13.3333px; padding-left: 0px; font-family: &quot;Microsoft Yahei&quot;; top: 0px; left: 40px; line-height: 34px;">密码</span>
+                        </div>
+                        <p class="tips" id="login_password_error"></p>
+                    </div>
+                    <div class="Rotate">
+                        <label class="Rotate-prompt">请点击下方图片，旋转至正确方向</label>
+                        <label class="error is-visible">请点击下方图片，旋转至正确方向</label>
+                        <a class="Rotate-refresh">换一组</a>
+
+                    </div>
+                    <div class="Rotate-background" style="background-position: 0px 0px;"></div>
+                    <div class="Rotate-background" style="background-position: -76px 0px;"></div>
+                    <div class="Rotate-background" style="background-position: -152px 0px;"></div>
+                    <div class="Rotate-background" style="background-position: -228px 0px;"></div>
+                    <div class="auto_login"><input type="checkbox"><span>请勿在公用电脑上勾选此选项</span><a href="">忘记密码 </a></div>
+                    <div class="btn">
+                        <a id="submitLoginBtn" href="javascript:void(0);" tabindex="6">登&nbsp;录</a>
+                    </div>
+                    <div class="register">
+                        <span>使用合作网站登录</span><a href="">《隐私政策》</a>
+                        <a href="" class="register_btn">立即注册</a>
+                    </div>
+                    <div class="partner">
+                        <div class="partnerLogo">
+                            <a class="qq" href=""></a>
+                            <a class="wx" href=""></a>
+                            <a class="wb" href=""></a>
+                            <a class="alipay" href=""></a></div>
+                        <a class="more" href="javascript:void(0)">更多<em></em></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a class="click_area" href="http://a.dangdang.com/api/data/cpx/link/38930001/1"></a>
+    </div>
+
+    <!-- 加载底部公共模块 -->
+    <div id="footer"></div>
+    <script type="module" src="../js/login.js"></script>
+</body>
+
+</html>

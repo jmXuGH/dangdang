@@ -1,0 +1,316 @@
+.mask {
+  position: fixed;
+  border: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  filter: alpha(opacity=10);
+  opacity: 0.1;
+  z-index: 100; }
+
+.warning {
+  position: fixed;
+  z-index: 101;
+  padding-bottom: 30px;
+  overflow: hidden;
+  border: 1px solid #E6E6E6;
+  font-size: 12px;
+  color: #646464;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  width: 492px;
+  margin-left: -246px;
+  margin-top: -141px; }
+  .warning h3 {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    background-color: #F5F5F5; }
+  .warning .pop_cheat_info {
+    padding: 16px 15px 0 20px;
+    line-height: 24px;
+    font-size: 12px; }
+  .warning .right {
+    float: left;
+    width: 435px;
+    padding: 16px 20px 0 20px;
+    line-height: 24px;
+    font-size: 12px; }
+    .warning .right b {
+      color: #ff2832;
+      font-weight: bold; }
+  .warning .loginMaskbtn {
+    display: block;
+    margin: 25px auto 0;
+    height: 24px;
+    text-align: center;
+    clear: both; }
+    .warning .loginMaskbtn a {
+      display: inline-block;
+      color: #fff;
+      text-decoration: none;
+      height: 24px;
+      line-height: 24px;
+      background-color: #FF2832;
+      padding: 0 10px;
+      border-radius: 3px; }
+    .warning .loginMaskbtn a:hover {
+      background-color: #F00000; }
+
+.header {
+  margin: 12px auto 14px;
+  width: 1200px;
+  height: 60px; }
+  .header img {
+    float: left;
+    margin: 7px 0 0 0; }
+  .header .improve {
+    float: right;
+    margin-top: 34px; }
+    .header .improve .icon {
+      display: inline-block;
+      width: 15px;
+      height: 19px;
+      background: url(../image/improve.png) no-repeat 0 0;
+      vertical-align: middle; }
+    .header .improve .info {
+      color: #787878; }
+
+.login_bg {
+  background: url(../image/get_login_ad.php) no-repeat center center;
+  height: 590px; }
+  .login_bg .set_area {
+    width: 1200px;
+    margin: 0 auto; }
+    .login_bg .set_area .wrap {
+      background: #fff;
+      padding: 15px 25px 15px 15px;
+      *padding: 15px 25px 20px 15px;
+      float: right;
+      width: 320px;
+      color: #6e6e6e;
+      margin: 90px auto 0;
+      position: relative;
+      border: 1px solid #eef2f4;
+      box-shadow: 0px 1px 2px #eee; }
+      .login_bg .set_area .wrap .new_tip {
+        display: block;
+        width: 338px;
+        height: 24px;
+        right: -1px;
+        top: -27px;
+        line-height: 24px;
+        color: #828282;
+        padding-left: 22px;
+        background: url(../image/new_tip.png) 3px 5px no-repeat #fef7f5;
+        border: 1px solid #fedbd1;
+        position: absolute; }
+        .login_bg .set_area .wrap .new_tip a {
+          color: #1a66b3; }
+        .login_bg .set_area .wrap .new_tip a:hover {
+          text-decoration: underline; }
+      .login_bg .set_area .wrap .login_box {
+        position: relative; }
+        .login_bg .set_area .wrap .login_box .hd .switch {
+          display: block;
+          width: 55px;
+          height: 55px;
+          background: url(../image/scan_icon.png);
+          position: absolute;
+          right: -20px;
+          top: -13px;
+          z-index: 10; }
+        .login_bg .set_area .wrap .login_box .info_remind {
+          position: absolute;
+          top: -13px;
+          right: 43px;
+          border: 1px solid #fedbd1;
+          background-color: #fef7f5;
+          color: #ff572a;
+          padding: 4px 6px; }
+          .login_bg .set_area .wrap .login_box .info_remind .info .safe_icon {
+            background: url(../image/safe_icon.png) no-repeat;
+            display: inline-block;
+            width: 15px;
+            height: 17px;
+            vertical-align: middle;
+            margin-right: 4px; }
+          .login_bg .set_area .wrap .login_box .info_remind .info .arrow_icon {
+            background: url(../image/arrow_right_icon.png) no-repeat;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            right: -12px;
+            top: 6px; }
+        .login_bg .set_area .wrap .login_box .password_login {
+          font-size: 18px;
+          color: #3c3c3c;
+          margin-top: 5px; }
+        .login_bg .set_area .wrap .login_box .username,
+        .login_bg .set_area .wrap .login_box .password,
+        .login_bg .set_area .wrap .login_box .code {
+          height: 36px;
+          border: 1px solid #e6e6e6;
+          width: 310px;
+          border-radius: 2px;
+          position: relative; }
+          .login_bg .set_area .wrap .login_box .username i,
+          .login_bg .set_area .wrap .login_box .password i,
+          .login_bg .set_area .wrap .login_box .code i {
+            width: 30px;
+            margin-right: 10px;
+            height: 36px;
+            float: left;
+            background: url(../image/icon_20150706.png) 10px -110px no-repeat; }
+        .login_bg .set_area .wrap .login_box .username {
+          margin-top: 20px; }
+        .login_bg .set_area .wrap .login_box .password i {
+          background-position: 10px -150px; }
+        .login_bg .set_area .wrap .login_box .focus {
+          border-color: #969696; }
+        .login_bg .set_area .wrap .login_box .tips {
+          height: 30px;
+          line-height: 30px;
+          padding-left: 10px; }
+        .login_bg .set_area .wrap .login_box .text_del {
+          width: 10px;
+          height: 11px;
+          display: block;
+          top: 12px;
+          left: 290px;
+          position: absolute;
+          background: url(../image/icon_20150706.png) 0 -230px no-repeat; }
+        .login_bg .set_area .wrap .login_box .ipt_box input {
+          float: left;
+          height: 34px;
+          line-height: 34px;
+          border: 0;
+          color: #333;
+          font-family: "Microsoft Yahei";
+          padding: 0;
+          width: 270px; }
+        .login_bg .set_area .wrap .login_box .Rotate {
+          color: #555;
+          height: 16px;
+          line-height: 16px;
+          margin: 0 1px 8px;
+          position: relative; }
+          .login_bg .set_area .wrap .login_box .Rotate .Rotate-prompt {
+            font-size: 14px;
+            opacity: 1;
+            position: absolute;
+            transform: translate(0px, 0px);
+            transition: all 0.25s ease-out 0s;
+            vertical-align: baseline;
+            visibility: visible; }
+          .login_bg .set_area .wrap .login_box .Rotate .error {
+            display: none;
+            background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+            color: #f42e00;
+            left: 0;
+            line-height: inherit;
+            opacity: 0;
+            padding: 0;
+            border: none;
+            position: absolute;
+            top: 0;
+            transform: translate(-20px, 0px);
+            transition: all 0.25s ease-out 0s;
+            visibility: hidden; }
+          .login_bg .set_area .wrap .login_box .Rotate a {
+            cursor: pointer;
+            position: absolute;
+            color: #1a66b3;
+            right: 0;
+            top: 0; }
+          .login_bg .set_area .wrap .login_box .Rotate a:hover {
+            text-decoration: underline; }
+        .login_bg .set_area .wrap .login_box .Rotate-background {
+          background-image: url(../image/rotate.jfif);
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          float: left;
+          margin: 0 1px 0;
+          height: 76px;
+          width: 76px; }
+        .login_bg .set_area .wrap .login_box .auto_login {
+          width: 310px;
+          height: 27px;
+          line-height: 22px;
+          padding-top: 7px;
+          overflow: hidden;
+          position: relative; }
+          .login_bg .set_area .wrap .login_box .auto_login input {
+            vertical-align: middle;
+            margin-top: -1px; }
+          .login_bg .set_area .wrap .login_box .auto_login a {
+            cursor: pointer;
+            float: right;
+            color: #1a66b3; }
+          .login_bg .set_area .wrap .login_box .auto_login a:hover {
+            text-decoration: underline; }
+        .login_bg .set_area .wrap .login_box .btn a {
+          width: 100%;
+          border-radius: 5px;
+          color: #fff;
+          display: inline-block;
+          height: 44px;
+          text-align: center;
+          font: normal 20px/44px "Microsoft Yahei";
+          background: #ff2832; }
+        .login_bg .set_area .wrap .login_box .btn a:hover {
+          background: #f01923; }
+        .login_bg .set_area .wrap .login_box .register {
+          height: 24px;
+          line-height: 24px;
+          padding-top: 6px; }
+          .login_bg .set_area .wrap .login_box .register span {
+            margin-right: 50px; }
+          .login_bg .set_area .wrap .login_box .register a {
+            color: #1a66b3; }
+          .login_bg .set_area .wrap .login_box .register .register_btn {
+            float: right;
+            color: #6e6e6e; }
+          .login_bg .set_area .wrap .login_box .register a:hover {
+            text-decoration: underline; }
+        .login_bg .set_area .wrap .login_box .partner .partnerLogo a {
+          width: 20px;
+          height: 20px;
+          display: block;
+          background: url(../image/icon_20150706.png) 0 -260px no-repeat;
+          text-indent: 99em;
+          overflow: hidden;
+          float: left;
+          margin-right: 5px; }
+        .login_bg .set_area .wrap .login_box .partner .partnerLogo .wx {
+          background-position: 0 -280px; }
+        .login_bg .set_area .wrap .login_box .partner .partnerLogo .wb {
+          background-position: 0 -300px; }
+        .login_bg .set_area .wrap .login_box .partner .partnerLogo .alipay {
+          background-position: 0 -320px; }
+        .login_bg .set_area .wrap .login_box .partner .more {
+          color: #969696;
+          padding-left: 10px;
+          position: relative;
+          float: left;
+          line-height: 20px; }
+          .login_bg .set_area .wrap .login_box .partner .more em {
+            width: 8px;
+            height: 20px;
+            display: inline-block;
+            background: url(../image/icon_20150706.png) 0 -340px no-repeat;
+            vertical-align: text-bottom;
+            margin-left: 5px; }
+  .login_bg .click_area {
+    display: block;
+    width: 655px;
+    height: 415px;
+    position: absolute;
+    z-index: 11;
+    top: 85px;
+    left: 5px; }

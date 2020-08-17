@@ -33,3 +33,11 @@ $('.ddnewhead_area').mouseleave(function () {
     $(this).children().eq(1).css('display', 'none');
 })
 
+// 输入框placeholder清空
+$(".search-ipt").focus(function(){
+    $(".search-placeholder").text("")
+})
+$(".search-ipt").blur(function(){
+    $(".search-placeholder").text("一往无前")
+})
+
