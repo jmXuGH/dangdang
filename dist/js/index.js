@@ -6,6 +6,20 @@ import './lib/swiper.js';
 import fenlei from './modules/index_mod/fenlei.js'
 fenlei();
 
+/* 控制fiexd显示与隐藏 */
+// console.log($(".miaosha_box").offset().top);
+// console.log($(document.documentElement).scrollTop());
+$(document).scroll(function(){
+    if ($(document.documentElement).scrollTop() < $(".miaosha_box").offset().top){
+        $(".fixed_search").css("display","none");
+    }else{
+       $(".fixed_search").css("display","block");
+   
+    }
+})
+ 
+
+
 /*渲染秒杀商品 */
 
 
@@ -267,7 +281,7 @@ $.get('../data/msList.json', '',function (data) {
     })
 })
 
-
+/* 完成厂商周轮播图 */
 
 var mySwipercs = new Swiper ('.swiper-cs', {
     // direction: 'vertical', // 垂直切换选项
