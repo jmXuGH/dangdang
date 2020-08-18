@@ -178,9 +178,9 @@
           line-height: 30px;
           padding-left: 10px; }
         .login_bg .set_area .wrap .login_box .text_del {
+          display: none;
           width: 10px;
           height: 11px;
-          display: block;
           top: 12px;
           left: 290px;
           position: absolute;
@@ -231,7 +231,7 @@
           .login_bg .set_area .wrap .login_box .Rotate a:hover {
             text-decoration: underline; }
         .login_bg .set_area .wrap .login_box .Rotate-background {
-          background-image: url(../image/rotate.jfif);
+          background-image: url(../image/rotate0.jfif);
           background-repeat: no-repeat;
           background-position: 0 0;
           float: left;

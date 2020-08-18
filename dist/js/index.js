@@ -260,7 +260,7 @@ $.get('../data/msList.json', '',function (data) {
     // console.log(data);
     $.each(data,function(i,l){
        var good_con = `<div class="goods_con">
-        <a class="pic" href="">
+        <a class="pic" href="./goodsList.html">
             <img src="../image/${l.imgSrc}" alt="">
         </a>
         <div class="line">

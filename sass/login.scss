@@ -248,9 +248,9 @@
                 }
 
                 .text_del {
+                    display: none;
                     width: 10px;
                     height: 11px;
-                    display: block;
                     top: 12px;
                     left: 290px;
                     position: absolute;
@@ -317,7 +317,7 @@
                 }
 
                 .Rotate-background {
-                    background-image: url(../image/rotate.jfif);
+                    background-image: url(../image/rotate0.jfif);
                     background-repeat: no-repeat;
                     background-position: 0 0;
                     float: left;

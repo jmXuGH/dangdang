@@ -27,6 +27,7 @@
     "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
+    "gulp-jshint": "^2.1.0",
     "swiper": "^6.1.1"
   }
 }

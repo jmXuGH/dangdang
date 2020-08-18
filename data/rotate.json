@@ -1,0 +1,22 @@
+[
+    {
+        "imgScr": "../image/rotate0.jfif",
+        "code": 3131
+    },
+    {
+        "imgScr": "../image/rotate1.jfif",
+        "code": 1020
+    },
+    {
+        "imgScr": "../image/rotate2.jfif",
+        "code": 2003
+    },
+    {
+        "imgScr": "../image/rotate3.jfif",
+        "code": 3202
+    },
+    {
+        "imgScr": "../image/rotate4.jfif",
+        "code": "0110"
+    }
+]
