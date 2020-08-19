@@ -105,7 +105,7 @@ var pre = 0;
 var rad = 0;
 var trueCode = '';
 function szBg() {
-    $.get('../data/rotate.json', '',  function (data) {
+    $.get('../data/rotate.json', '', function (data) {
         rad = randomInt(0, 4);
         while (pre === rad) { rad = randomInt(0, 4); }
         trueCode = data[rad].code;

@@ -835,7 +835,8 @@
             color: #646464;
             display: inline; }
       .books_box .book_right .tab_con .book_li .item {
-        height: 132px; }
+        height: 132px;
+        display: none; }
         .books_box .book_right .tab_con .book_li .item .num {
           height: 133px; }
         .books_box .book_right .tab_con .book_li .item .img img {

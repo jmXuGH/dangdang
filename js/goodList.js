@@ -2,7 +2,7 @@ import './lib/jquery-2.1.4.js';
 import cutdown from './modules/cutdown.js'
 let timer = null;
 clearInterval(timer);
-timer = setInterval(function() {
+timer = setInterval(function () {
     let obj = cutdown();
     $('.h').text(obj.h);
     $('.m').text(obj.m);
@@ -10,7 +10,7 @@ timer = setInterval(function() {
 }, 1000);
 
 /*公共部分：头部导航栏*/
-$('#header').load("./header.html", function() {
+$('#header').load("./header.html", function () {
     $(".logo_line_out").css("display", "none");
     $(".ddnewhead_area").css("display", "none");
     $(".ddnewhead_welcome").css("float", "left");
@@ -18,7 +18,7 @@ $('#header').load("./header.html", function() {
 });
 
 /*公共部分：加载尾部*/
-$('#footer').load("./footer.html", function() {
+$('#footer').load("./footer.html", function () {
     $('.footer_pic_new').css('display', 'none');
     $('.public_footer_new').css('display', 'none');
 
@@ -27,10 +27,10 @@ $('#footer').load("./footer.html", function() {
 });
 
 
-$.get('../data/goodsList.json', '', function(data) {
-    $.each(data, function(i, l) {
+$.get('../data/goodsList.json', '', function (data) {
+    $.each(data, function (i, l) {
         // console.log(l);
-        var newLi = `<li class="msgoods clearBoth">
+        var newLi = `<li class="msgoods clearBoth" goodId="${i}">
         <div class="item">
             <a href="./goodsDtail.html" class="show" target="_blank"><img
                     src="${l.imgUrl}"></a>
@@ -50,5 +50,11 @@ $.get('../data/goodsList.json', '', function(data) {
     </li>`
         $(".sale").append(newLi);
     })
+    $(".msgoods").click(function () {
+        var goodsId = $(this).attr("goodId");
+        localStorage.setItem("goodsId" , goodsId);
+        window.open("./goodsDtail.html")
+    })
+
 
 })

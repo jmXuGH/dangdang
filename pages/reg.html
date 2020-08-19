@@ -12,9 +12,73 @@
 
 <body>
     <div class="head">
-
+        <div class="dd_log float-l">
+            <img src="../image/ddnewhead_logo.gif" alt="">
+        </div>
+        <div class="welcome float-r">
+            <span>欢迎光临当当网，请</span><a class="login" href="./login.html">登录</a><a href="">免费注册</a>
+        </div>
+        <div class="ddnewcarthead_bottom"></div>
     </div>
 
+
+    <div class="bd">
+        <div class="shadow_box">
+            <div class="register_box">
+
+                <div class="head clearBoth">
+                    <span class="dd_more">
+                        <a href="./index.html" class="home">当当首页</a>
+                        <a href="">注册帮助</a>
+                    </span>
+                    <a href="" class="head_a head_a1">新用户注册</a>
+                    <a href="" class="head_a">企业用户注册</a>
+                </div>
+
+                <div class="new_tip">
+
+                    <span>贴心提示：请勿设置与邮箱密码相同的账户登录密码或支付密码，防止不法分子窃取您的当当账户信息，</span><a href="">谨防诈骗</a>
+                </div>
+
+                <div class="ipt_box">
+
+                    <p>
+                        <label for="email">邮箱号码</label>
+                        <input type="text" id="email" placeholder="请输入邮箱号">
+                        <div class="tips">手机号可用于登录、找回密码、接收订单通知等服务</div>
+                    </p>
+                    <p>
+                        <label for="pass">登录密码</label>
+                        <input type="text" id="pass">
+                    </p>
+                    <p>
+                        <label for="repass">确认密码</label>
+                        <input id="repass" type="text">
+                    </p>
+                    <p isTrue="false" class="yzm_box"><label for="yzm">验证码</label>
+
+                        <span id="spn_vcode_ok" class="pin_i icon_yes"></span>
+                        <input id="yzm" type="text">
+                        <input id="emyzm" placeholder="填写短信验证码" type="text" style="display: none;">
+
+                        <a  href="javascript:void(0)">
+                            <img class="yzm_pc" src="../image/tmp_proxy0.png" alt="">
+                         </a>
+                        <a class="turn" href="javascript:void(0)" >换张图</a>
+                        <button class="hqBtn">获取短信验证码</button>
+                    </p>
+                    <div class="clause"><input class="check" type="checkbox"><span>我已阅读并同意
+                        </span>
+                        <a href="">《当当交易条款》</a>
+                        <a href="">《当当社区条款》</a>
+                        <a href="">《当当隐私政策》</a></div>
+                    <div class="reg_btn">
+                        立即注册
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- 加载底部公共模块 -->
     <div id="footer"></div>

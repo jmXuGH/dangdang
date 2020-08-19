@@ -325,3 +325,11 @@ var mySwipercs = new Swiper('.swiper-cs', {
         clickable: true
     }
 })
+
+$(".bar").mouseenter(function(){
+    $(".hidden").next().css("display","none");
+    $(".hidden").removeClass("hidden");
+    $(this).next().css("display","block")
+    $(this).addClass("hidden");
+    
+})

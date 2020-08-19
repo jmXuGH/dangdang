@@ -17,8 +17,8 @@ router.get('/reg', (req, res) => {
     // let index = Math.floor(Math.random() * 5)
     // let headUrl = headArr.headUrl[index]
     let params = [mail, ps]
-    let qSql = 'select from user where us = ?'
-    db.mysqlUse(sql, params)
+    let qSql = 'select * from user where us = ?'
+    db.mysqlUse(qSql, params)
         .then((data) => {
             if (!data[0]) {
                 let sql = 'insert into user (us,ps) values (?,?)'
@@ -33,7 +33,7 @@ router.get('/reg', (req, res) => {
                     })
             }else{
 
-                res.status(200).json({ "status": true, "msg ": "用户已存在", "data": data });
+                res.status(200).json({ "status": true, "msg": "用户已存在", "data": data });
 
             }
         })
@@ -53,7 +53,7 @@ router.get('/login', (req, res) => {
     db.mysqlUse(sql, params)
         .then((data) => {
             // console.log(data);
-            res.status(200).json({ "status": true, "msg ": "", "data": data });
+            res.status(200).json({ "status": true, "msg": "", "data": data });
         })
         .catch((e) => {
             console.log(e);
