@@ -90,3 +90,199 @@
           .goods_detail_con .product_main .pic_info .dp_slide_box li img {
             width: 54px;
             height: 54px; }
+    .goods_detail_con .product_main .show_info {
+      float: left;
+      width: 860px;
+      font: 12px Verdana, Simsun;
+      color: #646464; }
+      .goods_detail_con .product_main .show_info .sale_box {
+        line-height: 24px;
+        padding: 0 0 0 10px;
+        margin-top: 5px; }
+        .goods_detail_con .product_main .show_info .sale_box .sale_box_left {
+          width: 630px;
+          float: left; }
+          .goods_detail_con .product_main .show_info .sale_box .sale_box_left .name_info {
+            font-family: Verdana, "Microsoft Yahei";
+            font-weight: 400;
+            border-bottom: 1px solid #f5f5f5;
+            padding: 0 6px 12px 0; }
+            .goods_detail_con .product_main .show_info .sale_box .sale_box_left .name_info h1 {
+              line-height: 24px;
+              max-height: 48px;
+              overflow: hidden;
+              color: #323232;
+              font-size: 18px;
+              margin: 0 auto;
+              font-weight: bold; }
+            .goods_detail_con .product_main .show_info .sale_box .sale_box_left .name_info h2 {
+              padding-top: 6px;
+              max-height: 96px;
+              overflow: hidden;
+              font-size: 16px;
+              line-height: 24px; }
+              .goods_detail_con .product_main .show_info .sale_box .sale_box_left .name_info h2 .head_title_name {
+                color: #323232; }
+              .goods_detail_con .product_main .show_info .sale_box .sale_box_left .name_info h2 .hot a {
+                color: #1a66b3; }
+              .goods_detail_con .product_main .show_info .sale_box .sale_box_left .name_info h2 .hot a:hover {
+                text-decoration: underline; }
+          .goods_detail_con .product_main .show_info .sale_box .sale_box_left .messbox_info a {
+            color: #1a66b3; }
+          .goods_detail_con .product_main .show_info .sale_box .sale_box_left .messbox_info .t1 {
+            display: inline-block;
+            padding-right: 25px; }
+          .goods_detail_con .product_main .show_info .sale_box .sale_box_left .star_box {
+            float: left;
+            width: 70px;
+            height: 12px;
+            background: url(../image/icon_star.png) repeat-x 0 -12px;
+            margin: 6px 6px 0 0;
+            overflow: hidden; }
+            .goods_detail_con .product_main .show_info .sale_box .sale_box_left .star_box .star {
+              background: url(../image/icon_star.png) repeat-x 0 0;
+              display: block;
+              height: 12px; }
+          .goods_detail_con .product_main .show_info .sale_box .sale_box_left .price_info {
+            background-color: #fcfaf7;
+            padding: 0 0 0 10px;
+            margin: 6px 0 0 -10px;
+            line-height: 24px;
+            position: relative;
+            width: 630px; }
+            .goods_detail_con .product_main .show_info .sale_box .sale_box_left .price_info .top {
+              width: 206px;
+              height: 64px; }
+              .goods_detail_con .product_main .show_info .sale_box .sale_box_left .price_info .top .rmb {
+                font-size: 14px; }
+              .goods_detail_con .product_main .show_info .sale_box .sale_box_left .price_info .top span {
+                color: #E52222; }
+              .goods_detail_con .product_main .show_info .sale_box .sale_box_left .price_info .top .num {
+                font-size: 26px; }
+              .goods_detail_con .product_main .show_info .sale_box .sale_box_left .price_info .top .zhe {
+                margin-left: 32px; }
+            .goods_detail_con .product_main .show_info .sale_box .sale_box_left .price_info .bot .del {
+              text-decoration: line-through; }
+            .goods_detail_con .product_main .show_info .sale_box .sale_box_left .price_info .price_ph {
+              padding: 0 24px 0 10px;
+              position: relative;
+              margin-top: 3px;
+              color: #8f8f8f; }
+              .goods_detail_con .product_main .show_info .sale_box .sale_box_left .price_info .price_ph .price_box {
+                color: #ff2832; }
+                .goods_detail_con .product_main .show_info .sale_box .sale_box_left .price_info .price_ph .price_box .num {
+                  font-size: 26px; }
+          .goods_detail_con .product_main .show_info .sale_box .sale_box_left .left {
+            float: left;
+            width: 68px;
+            color: #969696;
+            white-space: nowrap;
+            overflow: hidden;
+            letter-spacing: 24px; }
+          .goods_detail_con .product_main .show_info .sale_box .sale_box_left .right {
+            float: left;
+            width: 562px;
+            color: #646464; }
+          .goods_detail_con .product_main .show_info .sale_box .sale_box_left .lingquan_info {
+            padding: 0 0 7px 0;
+            background: #fff;
+            position: relative;
+            border-bottom: 1px dotted #d6d6d6; }
+            .goods_detail_con .product_main .show_info .sale_box .sale_box_left .lingquan_info .right ul li {
+              float: left;
+              height: 20px;
+              line-height: 20px;
+              margin-right: 8px;
+              background: url(../image/pro_quan.png) no-repeat left 0;
+              padding-left: 10px;
+              margin-top: 3px; }
+              .goods_detail_con .product_main .show_info .sale_box .sale_box_left .lingquan_info .right ul li a {
+                white-space: nowrap;
+                background: url(../image/pro_quan.png) no-repeat right 0;
+                padding-right: 10px;
+                height: 20px;
+                line-height: 20px;
+                color: #fff;
+                text-decoration: none;
+                display: inline-block; }
+          .goods_detail_con .product_main .show_info .sale_box .sale_box_left .cuxiao1_info {
+            padding: 0 0 7px 0;
+            background: #fff;
+            position: relative;
+            border-bottom: 1px dotted #d6d6d6; }
+            .goods_detail_con .product_main .show_info .sale_box .sale_box_left .cuxiao1_info .rig {
+              float: left; }
+              .goods_detail_con .product_main .show_info .sale_box .sale_box_left .cuxiao1_info .rig .t .mej {
+                float: left;
+                background-color: #f66;
+                color: #fff;
+                font-weight: 400;
+                padding: 0 6px;
+                height: 16px;
+                line-height: 16px;
+                border-radius: 3px;
+                margin-top: 5px;
+                overflow: hidden;
+                margin-right: 5px; }
+              .goods_detail_con .product_main .show_info .sale_box .sale_box_left .cuxiao1_info .rig .t .mjmsg {
+                float: left;
+                display: inline-block;
+                padding-right: 10px; }
+              .goods_detail_con .product_main .show_info .sale_box .sale_box_left .cuxiao1_info .rig .t a {
+                color: #969696; }
+              .goods_detail_con .product_main .show_info .sale_box .sale_box_left .cuxiao1_info .rig .t a:hover {
+                text-decoration: underline; }
+          .goods_detail_con .product_main .show_info .sale_box .sale_box_left .psonz {
+            padding-top: 7px; }
+            .goods_detail_con .product_main .show_info .sale_box .sale_box_left .psonz .letter03 {
+              letter-spacing: 6px; }
+            .goods_detail_con .product_main .show_info .sale_box .sale_box_left .psonz .rig p {
+              float: left;
+              margin-right: 5px; }
+            .goods_detail_con .product_main .show_info .sale_box .sale_box_left .psonz .rig .address {
+              padding: 0 14px 0 5px;
+              border: 1px solid #ccc;
+              line-height: 20px;
+              margin-top: 2px;
+              background: #fff url(../image/product_sprites.png) no-repeat right -313px;
+              cursor: pointer; }
+            .goods_detail_con .product_main .show_info .sale_box .sale_box_left .psonz .rig .ishuo {
+              font-weight: bold; }
+          .goods_detail_con .product_main .show_info .sale_box .sale_box_left .server {
+            padding-top: 7px; }
+          .goods_detail_con .product_main .show_info .sale_box .sale_box_left .choose_xilie .left1 {
+            float: left;
+            width: 68px;
+            color: #969696;
+            white-space: nowrap;
+            overflow: hidden; }
+          .goods_detail_con .product_main .show_info .sale_box .sale_box_left .choose_xilie .rig {
+            width: 562px; }
+            .goods_detail_con .product_main .show_info .sale_box .sale_box_left .choose_xilie .rig .jia_gou_e {
+              padding: 0 8px 0 28px;
+              position: relative;
+              float: left;
+              margin: 0 5px 5px 1px;
+              border: 1px solid #d7d7d7;
+              color: #646464; }
+              .goods_detail_con .product_main .show_info .sale_box .sale_box_left .choose_xilie .rig .jia_gou_e img {
+                width: 22px;
+                height: 22px;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 3px; }
+                .goods_detail_con .product_main .show_info .sale_box .sale_box_left .choose_xilie .rig .jia_gou_e img span {
+                  display: block;
+                  white-space: nowrap;
+                  zoom: 1;
+                  color: #646464; }
+            .goods_detail_con .product_main .show_info .sale_box .sale_box_left .choose_xilie .rig .jia_gou_e:hover {
+              border: 2px solid #ff7d82;
+              margin: -1px 4px 4px 0; }
+            .goods_detail_con .product_main .show_info .sale_box .sale_box_left .choose_xilie .rig .jia_gou_e.choose {
+              background: url(../image/product_sprites.png) no-repeat right -646px;
+              border: 2px solid #ff7d82;
+              margin: -1px 4px 4px 0; }
+            .goods_detail_con .product_main .show_info .sale_box .sale_box_left .choose_xilie .rig .jiagou {
+              margin-top: 20px; }

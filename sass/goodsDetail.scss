@@ -129,6 +129,327 @@
         }
 
 
+        .show_info {
+            float: left;
+            width: 860px;
+            font: 12px Verdana, Simsun;
+            color: #646464;
+
+            .sale_box {
+                line-height: 24px;
+                padding: 0 0 0 10px;
+                margin-top: 5px;
+
+                .sale_box_left {
+                    width: 630px;
+                    float: left;
+
+                    .name_info {
+                        font-family: Verdana, "Microsoft Yahei";
+                        font-weight: 400;
+                        border-bottom: 1px solid #f5f5f5;
+                        padding: 0 6px 12px 0;
+
+                        h1 {
+                            line-height: 24px;
+                            max-height: 48px;
+                            overflow: hidden;
+                            color: #323232;
+                            font-size: 18px;
+                            margin: 0 auto;
+                            font-weight: bold;
+                        }
+
+                        h2 {
+                            padding-top: 6px;
+                            max-height: 96px;
+                            overflow: hidden;
+                            font-size: 16px;
+                            line-height: 24px;
+
+                            .head_title_name {
+                                color: #323232;
+
+                            }
+
+                            .hot {
+                                a {
+                                    color: #1a66b3;
+                                }
+
+                                a:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+
+                    .messbox_info {
+                        a {
+                            color: #1a66b3;
+                        }
+
+                        .t1 {
+                            display: inline-block;
+                            padding-right: 25px;
+                        }
+                    }
+
+                    .star_box {
+                        float: left;
+                        width: 70px;
+                        height: 12px;
+                        background: url(../image/icon_star.png) repeat-x 0 -12px;
+                        margin: 6px 6px 0 0;
+                        overflow: hidden;
+
+                        .star {
+                            background: url(../image/icon_star.png) repeat-x 0 0;
+                            display: block;
+                            height: 12px;
+                        }
+                    }
+
+                    .price_info {
+                        background-color: #fcfaf7;
+                        padding: 0 0 0 10px;
+                        margin: 6px 0 0 -10px;
+                        line-height: 24px;
+                        position: relative;
+                        width: 630px;
+
+                        .top {
+                            width: 206px;
+                            height: 64px;
+
+                            .rmb {
+                                font-size: 14px;
+
+                            }
+
+                            span {
+                                color: #E52222;
+
+                            }
+
+                            .num {
+                                font-size: 26px;
+                            }
+
+                            .zhe {
+                                margin-left: 32px;
+                            }
+                        }
+
+                        .bot {
+                            .del {
+                                text-decoration: line-through;
+                            }
+                        }
+
+                        .price_ph {
+
+                            padding: 0 24px 0 10px;
+                            position: relative;
+                            margin-top: 3px;
+                            color: #8f8f8f;
+
+                            .price_box {
+
+                                color: #ff2832;
+
+                                .num {
+                                    font-size: 26px;
+                                }
+                            }
+                        }
+
+
+
+                    }
+
+                    .left {
+                        float: left;
+                        width: 68px;
+                        color: #969696;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        letter-spacing: 24px;
+                    }
+
+                    .right {
+                        float: left;
+                        width: 562px;
+                        color: #646464;
+                    }
+
+                    .lingquan_info {
+                        padding: 0 0 7px 0;
+                        background: #fff;
+                        position: relative;
+                        border-bottom: 1px dotted #d6d6d6;
+
+                        .right {
+                            ul {
+                                li {
+                                    float: left;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    margin-right: 8px;
+                                    background: url(../image/pro_quan.png) no-repeat left 0;
+                                    padding-left: 10px;
+                                    margin-top: 3px;
+
+                                    a {
+                                        white-space: nowrap;
+                                        background: url(../image/pro_quan.png) no-repeat right 0;
+                                        padding-right: 10px;
+                                        height: 20px;
+                                        line-height: 20px;
+                                        color: #fff;
+                                        text-decoration: none;
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+                    .cuxiao1_info {
+                        padding: 0 0 7px 0;
+                        background: #fff;
+                        position: relative;
+                        border-bottom: 1px dotted #d6d6d6;
+
+                        .rig {
+                            float: left;
+
+                            .t {
+                                .mej {
+                                    float: left;
+                                    background-color: #f66;
+                                    color: #fff;
+                                    font-weight: 400;
+                                    padding: 0 6px;
+                                    height: 16px;
+                                    line-height: 16px;
+                                    border-radius: 3px;
+                                    margin-top: 5px;
+                                    overflow: hidden;
+                                    margin-right: 5px;
+                                }
+
+                                .mjmsg {
+                                    float: left;
+                                    display: inline-block;
+                                    padding-right: 10px;
+                                }
+
+                                a {
+                                    color: #969696;
+                                }
+
+                                a:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+
+                    .psonz {
+                        padding-top: 7px;
+
+                        .letter03 {
+                            letter-spacing: 6px;
+                        }
+
+                        .rig {
+                            p {
+                                float: left;
+                                margin-right: 5px;
+                            }
+
+                            .address {
+
+                                padding: 0 14px 0 5px;
+                                border: 1px solid #ccc;
+                                line-height: 20px;
+                                margin-top: 2px;
+                                background: #fff url(../image/product_sprites.png) no-repeat right -313px;
+                                cursor: pointer;
+                            }
+
+                            .ishuo {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+
+                    .server {
+                        padding-top: 7px;
+                    }
+
+                    .choose_xilie {
+                        .left1 {
+                            float: left;
+                            width: 68px;
+                            color: #969696;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+
+                        .rig {
+                            width: 562px;
+
+                            .jia_gou_e {
+                                padding: 0 8px 0 28px;
+                                position: relative;
+                                float: left;
+                                margin: 0 5px 5px 1px;
+                                border: 1px solid #d7d7d7;
+                                color: #646464;
+
+                                img {
+                                    width: 22px;
+                                    height: 22px;
+                                    display: block;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 3px;
+
+                                    span {
+                                        display: block;
+                                        white-space: nowrap;
+                                        zoom: 1;
+                                        color: #646464;
+                                    }
+                                }
+                            }
+
+                            .jia_gou_e:hover {
+                                border: 2px solid #ff7d82;
+                                margin: -1px 4px 4px 0;
+                            }
+
+                            .jia_gou_e.choose {
+                                background: url(../image/product_sprites.png) no-repeat right -646px;
+                                border: 2px solid #ff7d82;
+                                margin: -1px 4px 4px 0;
+                            }
+
+                            .jiagou{
+                                margin-top: 20px;
+                                .addgoods{
+
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
 
 
 
@@ -139,7 +460,6 @@
 
 
 
-        
     }
 
 }
