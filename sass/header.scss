@@ -432,3 +432,63 @@
 
     /* 搜索栏和logo栏样式结束*/
 }
+
+/* 导航栏样式开始*/
+.nav_top {
+    width: 100%;
+    height: 40px;
+    min-width: 1200px;
+    border-bottom: 3px solid #ff2832;
+
+    .menu_list_tab {
+        width: 1200px;
+        margin: 0 auto;
+
+
+        li.all {
+            width: 200px;
+            margin-right: 17px;
+            text-align: left;
+            background: #ff2832;
+            position: relative;
+            padding: 0;
+
+            a {
+                padding: 0 0 0 20px;
+                display: block;
+                width: 171px;
+                background: url(http://img63.ddimg.cn/upload_img/00459/home/head_sprite.png) no-repeat 161px -567px;
+                color: #fff;
+            }
+
+            a:hover {
+                color: #fff;
+            }
+        }
+
+        li {
+            float: left;
+            text-align: center;
+            height: 40px;
+            padding: 0 15px;
+            line-height: 40px;
+
+            a {
+                display: block;
+                color: #323232;
+                font: 14px/40px "Microsoft Yahei";
+                font-weight: normal;
+                text-decoration: none;
+                display: block;
+                font-weight: bold;
+            }
+
+            a:hover {
+                color: #ff2832;
+            }
+        }
+    }
+
+}
+
+/* 导航栏样式结束*/

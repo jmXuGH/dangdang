@@ -1,0 +1,92 @@
+.goods_detail_con {
+  width: 1200px;
+  margin: 10px auto; }
+  .goods_detail_con .head_img {
+    height: 60px;
+    width: 1198px;
+    margin: 10px auto 0;
+    border: 1px solid #dcdddd;
+    overflow: hidden; }
+  .goods_detail_con .breadcrumb {
+    color: #646464;
+    font: 12px/40px simsun;
+    height: 40px;
+    padding-bottom: 8px;
+    position: relative;
+    z-index: 10000; }
+    .goods_detail_con .breadcrumb a.domain {
+      font: 14px/40px "Microsoft Yahei"; }
+    .goods_detail_con .breadcrumb a {
+      color: #646464;
+      float: left; }
+    .goods_detail_con .breadcrumb span {
+      float: left;
+      color: #323232; }
+    .goods_detail_con .breadcrumb .gt {
+      color: #646464;
+      margin: 1px 6px 0; }
+    .goods_detail_con .breadcrumb .msg {
+      width: 355px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+  .goods_detail_con .product_main {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; }
+    .goods_detail_con .product_main .pic_info {
+      float: left;
+      width: 320px;
+      padding: 0 20px 30px 0; }
+      .goods_detail_con .product_main .pic_info .img {
+        display: block;
+        width: 320px;
+        height: 320px;
+        overflow: hidden;
+        position: relative; }
+        .goods_detail_con .product_main .pic_info .img img {
+          display: block;
+          width: 320px;
+          height: 320px;
+          overflow: hidden; }
+        .goods_detail_con .product_main .pic_info .img .moveMask {
+          width: 160px;
+          height: 160px;
+          cursor: move;
+          position: absolute;
+          background: url(../image/zoom_pup.png);
+          display: none;
+          z-index: 10; }
+      .goods_detail_con .product_main .pic_info .sale_lable {
+        margin-top: 10px;
+        position: relative; }
+        .goods_detail_con .product_main .pic_info .sale_lable img {
+          display: block;
+          width: 100%; }
+        .goods_detail_con .product_main .pic_info .sale_lable .cuxiao_word {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          line-height: 48px;
+          text-align: center;
+          font-size: 22px;
+          font-family: "Microsoft YaHei";
+          color: #fff;
+          letter-spacing: 3px;
+          font-weight: 700;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none; }
+      .goods_detail_con .product_main .pic_info .dp_slide_box {
+        width: 100%;
+        margin-top: 10px; }
+        .goods_detail_con .product_main .pic_info .dp_slide_box li {
+          float: left;
+          width: 54px;
+          height: 54px; }
+          .goods_detail_con .product_main .pic_info .dp_slide_box li img {
+            width: 54px;
+            height: 54px; }

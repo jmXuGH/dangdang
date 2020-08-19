@@ -1,9 +1,11 @@
 .miaosha_nav {
     background-color: #ffd800;
     height: 95px;
-
+    width: 100%;
+    min-width: 1200px;
     .con {
-        width: 1300px;
+        
+        width: 1200px;
         margin: 0 auto;
 
         .con_left {

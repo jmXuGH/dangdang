@@ -1,0 +1,145 @@
+.goods_detail_con {
+    width: 1200px;
+    margin: 10px auto;
+
+    .head_img {
+        height: 60px;
+        width: 1198px;
+        margin: 10px auto 0;
+        border: 1px solid #dcdddd;
+        overflow: hidden;
+    }
+
+
+    .breadcrumb {
+        color: #646464;
+        font: 12px/40px simsun;
+        height: 40px;
+        padding-bottom: 8px;
+        position: relative;
+        z-index: 10000;
+
+        a.domain {
+            font: 14px/40px "Microsoft Yahei";
+        }
+
+        a {
+            color: #646464;
+            float: left;
+        }
+
+        span {
+            float: left;
+            color: #323232;
+        }
+
+        .gt {
+            color: #646464;
+            margin: 1px 6px 0;
+        }
+
+        .msg {
+            width: 355px;
+            overflow: hidden; //超出的文本隐藏
+            text-overflow: ellipsis; //溢出用省略号显示
+            white-space: nowrap; //溢出不换行
+        }
+
+    }
+
+    .product_main {
+        width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        .pic_info {
+            float: left;
+            width: 320px;
+            padding: 0 20px 30px 0;
+
+            .img {
+                display: block;
+                width: 320px;
+                height: 320px;
+                overflow: hidden;
+                position: relative;
+
+                img {
+                    display: block;
+                    width: 320px;
+                    height: 320px;
+                    overflow: hidden;
+                }
+
+                .moveMask {
+                    width: 160px;
+                    height: 160px;
+                    cursor: move;
+                    position: absolute;
+                    background: url(../image/zoom_pup.png);
+                    display: none;
+                    z-index: 10;
+                }
+            }
+
+            .sale_lable {
+                margin-top: 10px;
+                position: relative;
+
+                img {
+                    display: block;
+                    width: 100%;
+                }
+
+                .cuxiao_word {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    line-height: 48px;
+                    text-align: center;
+                    font-size: 22px;
+                    font-family: "Microsoft YaHei";
+                    color: #fff;
+                    letter-spacing: 3px;
+                    font-weight: 700;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                }
+            }
+
+            .dp_slide_box {
+                width: 100%;
+                margin-top: 10px;
+
+                li {
+                    float: left;
+                    width: 54px;
+                    height: 54px;
+
+                    img {
+                        width: 54px;
+                        height: 54px;
+                    }
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    }
+
+}

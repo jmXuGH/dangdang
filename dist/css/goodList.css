@@ -1,9 +1,11 @@
 @charset "UTF-8";
 .miaosha_nav {
   background-color: #ffd800;
-  height: 95px; }
+  height: 95px;
+  width: 100%;
+  min-width: 1200px; }
   .miaosha_nav .con {
-    width: 1300px;
+    width: 1200px;
     margin: 0 auto; }
     .miaosha_nav .con .con_left {
       float: left;

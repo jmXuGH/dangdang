@@ -72,10 +72,11 @@
     overflow: hidden;
     height: 300px;
     min-width: 1200px;
+
     .ad_img_box {
         margin: 0 auto;
         width: 1200px;
-       
+
 
         img {
             height: 300px;
@@ -84,65 +85,7 @@
     }
 }
 
-/* 导航栏样式开始*/
-.nav_top {
-    width: 100%;
-    height: 40px;
-    min-width: 1200px;
-    border-bottom: 3px solid #ff2832;
 
-    .menu_list_tab {
-        width: 1200px;
-        margin: 0 auto;
-
-
-        li.all {
-            width: 200px;
-            margin-right: 17px;
-            text-align: left;
-            background: #ff2832;
-            position: relative;
-            padding: 0;
-
-            a {
-                padding: 0 0 0 20px;
-                display: block;
-                width: 171px;
-                background: url(http://img63.ddimg.cn/upload_img/00459/home/head_sprite.png) no-repeat 161px -567px;
-                color: #fff;
-            }
-
-            a:hover {
-                color: #fff;
-            }
-        }
-
-        li {
-            float: left;
-            text-align: center;
-            height: 40px;
-            padding: 0 15px;
-            line-height: 40px;
-
-            a {
-                display: block;
-                color: #323232;
-                font: 14px/40px "Microsoft Yahei";
-                font-weight: normal;
-                text-decoration: none;
-                display: block;
-                font-weight: bold;
-            }
-
-            a:hover {
-                color: #ff2832;
-            }
-        }
-    }
-
-}
-
-/* 导航栏样式结束*/
 
 
 // 商品分类与轮播图开始
@@ -867,6 +810,7 @@
             position: relative;
             height: 456px;
             width: 203px;
+            padding-top: 1px;
 
             .swiper-pagination {
                 bottom: 470px !important;
@@ -970,8 +914,9 @@
             .con_left_book {
                 float: left;
                 position: relative;
+
                 .book_left_pic {
-                    
+
                     width: 238px;
                     height: 441px;
                     border: 1px solid #e6e6e6;
@@ -1027,12 +972,271 @@
             overflow: hidden;
             text-align: center;
             float: left;
+            // border-bottom: 1px solid #e6e6e6;
         }
 
         .book_pic_box2 {
             float: left;
+            width: 334px;
+            height: 220px;
+            overflow: hidden;
+            border-bottom: 1px solid #e6e6e6;
+
+            .item {
+                float: left;
+                width: 166px;
+                height: 220px;
+                border-right: 1px solid #e6e6e6;
+                position: relative;
+
+                a {
+                    img {
+                        display: block;
+                        width: 150px;
+                        height: 150px;
+                        overflow: hidden;
+                        text-align: center;
+                        margin: 7px auto 0;
+                    }
+                }
+
+                .name {
+                    height: 16px;
+                    line-height: 16px;
+                    width: 150px;
+                    margin: 5px auto 0;
+                    overflow: hidden;
+
+                    a {
+                        color: #646464;
+                    }
+                }
+
+                .price {
+                    width: 150px;
+                    margin: 3px auto 0;
+
+                    .rob {
+                        color: #ff2832;
+                        font: 14px Arial;
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+
+                    .price_r {
+                        font: 12px Arial;
+                        color: #969696;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+        }
+
+        .book_pic_box3 {
+            float: left;
+            width: 668px;
+            height: 220px;
+            margin-left: 1px;
+            overflow: hidden;
+
+            .item {
+                float: left;
+                width: 166px;
+                height: 220px;
+                border-right: 1px solid #e6e6e6;
+                position: relative;
+
+                .img {
+                    display: block;
+                    width: 150px;
+                    height: 150px;
+                    overflow: hidden;
+                    text-align: center;
+                    margin: 7px auto 0;
+                }
+
+                .name {
+                    height: 16px;
+                    line-height: 16px;
+                    width: 150px;
+                    margin: 5px auto 0;
+                    overflow: hidden;
+
+                    a {
+                        color: #646464
+                    }
+                }
+
+                .price {
+                    width: 150px;
+                    margin: 3px auto 0;
+
+                    .rob {
+                        color: #ff2832;
+                        font: 14px Arial;
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+
+                    .price_r {
+                        font: 12px Arial;
+                        color: #969696;
+                        text-decoration: line-through;
+                    }
+
+                    .ebookprice_n {
+                        display: block;
+                        font: 12px Arial;
+                        padding: 4px 0 0 0;
+                        color: #787878;
+                    }
+                }
+
+
+            }
         }
     }
+
+
+    .book_right {
+        width: 278px;
+        height: 497px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: 1px solid #e6e6e6;
+        overflow: hidden;
+
+        a {
+            color: #666;
+        }
+        
+
+        .head {
+            height: 46px;
+            width: 280px;
+
+
+
+            .tab {
+                li {
+                    float: left;
+                    height: 46px;
+                    width: 139px;
+                    border-right: 1px solid #e6e6e6;
+                    text-align: center;
+                    color: #464646;
+                    font: 16px/46px "Microsoft YaHei", Simsun;
+                    background-color: #f5f5f5;
+                    cursor: default;
+                    border-bottom: 1px solid #e6e6e6;
+                    a:hover{
+                        text-decoration:underline;
+                    }
+                }
+
+                li.on {
+                    background-color: #fff;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+
+        .tab_con {
+            .book_li {
+                padding-top: 10px;
+
+                li {
+                    border-bottom: 1px solid #e5e5e5;
+                    width: 278px;
+                    clear: both;
+                    vertical-align: top;
+                }
+
+                li.hidden {
+                    display: none;
+                }
+
+                .num {
+                    color: #ff3228;
+                    font-weight: bold;
+                    float: left;
+                    width: 25px;
+                    height: 33px;
+                    font: 12px/33px Arial;
+                    padding-left: 15px;
+                    background: #fff;
+                    margin-bottom: -1px;
+                    overflow: hidden;
+                }
+
+                .img {
+                    width: 90px;
+                    height: 90px;
+                    overflow: hidden;
+                    float: left;
+                    margin: 15px 0 0;
+                }
+
+                .bar {
+                    height: 32px;
+                    line-height: 32px;
+
+                    .name {
+                        float: left;
+                        width: 140px;
+                        height: 32px;
+                        line-height: 32px;
+                        overflow: hidden;
+
+                        a {
+                            color: #646464;
+                            display: inline;
+                        }
+                    }
+                }
+
+                .item {
+                    height: 132px;
+
+                    .num {
+                        height: 133px;
+                    }
+
+                    .img {
+                        img {
+                            width: 90px;
+                            height: 90px;
+                        }
+                    }
+
+                    .name {
+                        float: left;
+                        width: 140px;
+                        height: 32px;
+                        line-height: 12px;
+                        overflow: hidden;
+                        height: 100px;
+                        margin: 15px 0 0 5px;
+
+                        a {
+                            color: #646464;
+                            line-height: 20px;
+                            span {
+                                display: block;
+                                color: #969696;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+
+    }
+
 
 
 }
