@@ -17,7 +17,7 @@ bookList();
 /* 控制fiexd显示与隐藏 */
 // console.log($(".miaosha_box").offset().top);
 // console.log($(document.documentElement).scrollTop());
-$(document).scroll(function() {
+$(document).scroll(function () {
     if ($(document.documentElement).scrollTop() < $(".miaosha_box").offset().top) {
         $(".fixed_search").css("display", "none");
     } else {
@@ -31,12 +31,12 @@ $(document).scroll(function() {
 /*渲染秒杀商品 */
 
 
-$(function() {
+$(function () {
     /*公共部分：头部导航栏*/
-    $('#header').load("./header.html", function() {});
+    $('#header').load("./header.html", function () { });
 
     /*公共部分：加载尾部*/
-    $('#footer').load("./footer.html", function() {
+    $('#footer').load("./footer.html", function () {
         // $('.footer_pic_new').css('display','none');
         // $('.public_footer_new').css('display','none');
 
@@ -44,14 +44,14 @@ $(function() {
 
     });
     /*执行广告大图动画*/
-    setTimeout(function() {
+    setTimeout(function () {
         $('.ad_bar_top').animate({ height: 200 }, 'slow')
     }, 3000)
 
     // 轮播图分页器hover效果
-    $(".swiper-pagination-bullet").hover(function() {
+    $(".swiper-pagination-bullet").hover(function () {
         $(this).click(); //鼠标划上去之后，自动触发点击事件来模仿鼠标划上去的事件
-    }, function() {
+    }, function () {
         mySwiper.autoplay.start(); //鼠标移出之后，自动轮播开启
     })
 
@@ -77,7 +77,7 @@ var mySwiper = new Swiper('.swiper-container1', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        renderBullet: function(index, className) {
+        renderBullet: function (index, className) {
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         },
     },
@@ -107,11 +107,11 @@ var mySwiper = new Swiper('.swiper-container1', {
 // }
 
 $(mySwiper.el).hover(
-    function() {
+    function () {
         $('.swiper-container1 .swiper-button-prev').stop().animate({ left: 0 }, 'normal')
         $('.swiper-container1 .swiper-button-next').stop().animate({ right: 0 }, 'normal')
     },
-    function() {
+    function () {
         $('.swiper-container1 .swiper-button-prev').stop().animate({ left: -33 }, 'normal')
         $('.swiper-container1 .swiper-button-next').stop().animate({ right: -33 }, 'normal')
     }
@@ -141,12 +141,12 @@ var mySwiper2 = new Swiper('.swiper-container2', {
 })
 
 //鼠标覆盖停止自动切换与隐藏前进后退按钮
-mySwiper2.el.onmouseenter = function() {
-        $('.swiper-container2 .swiper-button-prev').stop().animate({ left: 0 }, 'normal')
-        $('.swiper-container2 .swiper-button-next').stop().animate({ right: 0 }, 'normal')
-    }
-    //鼠标覆盖停止自动切换与隐藏前进后退按钮
-mySwiper2.el.onmouseleave = function() {
+mySwiper2.el.onmouseenter = function () {
+    $('.swiper-container2 .swiper-button-prev').stop().animate({ left: 0 }, 'normal')
+    $('.swiper-container2 .swiper-button-next').stop().animate({ right: 0 }, 'normal')
+}
+//鼠标覆盖停止自动切换与隐藏前进后退按钮
+mySwiper2.el.onmouseleave = function () {
     $('.swiper-container2 .swiper-button-prev').stop().animate({ left: -33 }, 'normal')
     $('.swiper-container2 .swiper-button-next').stop().animate({ right: -33 }, 'normal')
 }
@@ -178,12 +178,12 @@ var mySwiper3 = new Swiper('.swiper-container3', {
 })
 
 //鼠标覆盖停止自动切换与隐藏前进后退按钮
-mySwiper3.el.onmouseenter = function() {
-        $('.swiper-container3 .swiper-button-prev').stop().animate({ left: 0 }, 'normal')
-        $('.swiper-container3 .swiper-button-next').stop().animate({ right: 0 }, 'normal')
-    }
-    //鼠标覆盖停止自动切换与隐藏前进后退按钮
-mySwiper3.el.onmouseleave = function() {
+mySwiper3.el.onmouseenter = function () {
+    $('.swiper-container3 .swiper-button-prev').stop().animate({ left: 0 }, 'normal')
+    $('.swiper-container3 .swiper-button-next').stop().animate({ right: 0 }, 'normal')
+}
+//鼠标覆盖停止自动切换与隐藏前进后退按钮
+mySwiper3.el.onmouseleave = function () {
     $('.swiper-container3 .swiper-button-prev').stop().animate({ left: -33 }, 'normal')
     $('.swiper-container3 .swiper-button-next').stop().animate({ right: -33 }, 'normal')
 }
@@ -264,7 +264,7 @@ import cutdown from './modules/cutdown.js'
 // console.log(cutdown());
 let timer = null;
 clearInterval(timer);
-timer = setInterval(function() {
+timer = setInterval(function () {
     let obj = cutdown();
     $('.h').text(obj.h)
     $('.m').text(obj.m)
@@ -274,18 +274,18 @@ timer = setInterval(function() {
 
 /* 渲染秒杀商品 */
 
-$.get('../data/msList.json', '', function(data) {
+$.get('../data/msList.json', '', function (data) {
     // console.log(data);
-    $.each(data, function(i, l) {
+    $.each(data, function (i, l) {
         var good_con = `<div class="goods_con">
         <a class="pic" href="./goodsList.html">
             <img src="../image/${l.imgSrc}" alt="">
         </a>
         <div class="line">
-            <div class="ms_prog_bar" style="width:${l.progress*100}%;"></div>
+            <div class="ms_prog_bar" style="width:${l.progress * 100}%;"></div>
             <div class="ms_num_bg"></div>
         </div>
-        <div class="per_num">已秒杀<b>${l.progress*100}</b>%</div>
+        <div class="per_num">已秒杀<b>${l.progress * 100}</b>%</div>
         <div class="name">
             <a href="">${l.msg}</a>
         </div>
@@ -326,10 +326,23 @@ var mySwipercs = new Swiper('.swiper-cs', {
     }
 })
 
-$(".bar").mouseenter(function(){
-    $(".hidden").next().css("display","none");
+$(".tab0 .bar").mouseenter(function () {
+    $(".hidden").next().css("display", "none");
     $(".hidden").removeClass("hidden");
-    $(this).next().css("display","block")
+    $(this).next().css("display", "block")
     $(this).addClass("hidden");
-    
+})
+$(".tab1 .bar").mouseenter(function () {
+    $(".hidden").next().css("display", "none");
+    $(".hidden").removeClass("hidden");
+    $(this).next().css("display", "block")
+    $(this).addClass("hidden");
+})
+var tabPre = 0;
+$(".book_right .head .tab li").mouseenter(function () {
+   $($(".book_right .head .tab li")[tabPre]).removeClass("on");
+   $(this).addClass("on");
+   $(".tab_con .tab" + tabPre).css("display","none");
+   $(".tab_con .tab" + $(this).index()).css("display","block");
+    tabPre = $(this).index();
 })

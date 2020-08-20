@@ -805,8 +805,9 @@
         vertical-align: top; }
       .books_box .book_right .tab_con .book_li li.hidden {
         display: none; }
+      .books_box .book_right .tab_con .book_li .hot {
+        color: #ff3228; }
       .books_box .book_right .tab_con .book_li .num {
-        color: #ff3228;
         font-weight: bold;
         float: left;
         width: 25px;
@@ -837,6 +838,9 @@
       .books_box .book_right .tab_con .book_li .item {
         height: 132px;
         display: none; }
+        .books_box .book_right .tab_con .book_li .item a:hover {
+          color: #ff3228 !important;
+          text-decoration: underline; }
         .books_box .book_right .tab_con .book_li .item .num {
           height: 133px; }
         .books_box .book_right .tab_con .book_li .item .img img {
@@ -856,3 +860,6 @@
             .books_box .book_right .tab_con .book_li .item .name a span {
               display: block;
               color: #969696; }
+          .books_box .book_right .tab_con .book_li .item .name a:hover span {
+            color: #ff3228 !important;
+            text-decoration: underline; }

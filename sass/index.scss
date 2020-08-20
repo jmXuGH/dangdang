@@ -1158,8 +1158,12 @@
                     display: none;
                 }
 
-                .num {
+                .hot {
                     color: #ff3228;
+                }
+
+                .num {
+
                     font-weight: bold;
                     float: left;
                     width: 25px;
@@ -1201,6 +1205,11 @@
                     height: 132px;
                     display: none;
 
+                    a:hover {
+                        color: #ff3228 !important;
+                        text-decoration: underline;
+                    }
+
                     .num {
                         height: 133px;
                     }
@@ -1229,6 +1238,11 @@
                                 display: block;
                                 color: #969696;
                             }
+                            
+                        }
+                        a:hover span{
+                            color: #ff3228 !important;
+                            text-decoration: underline;
                         }
                     }
 

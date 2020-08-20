@@ -11,15 +11,15 @@ $('#footer').load("./footer.html", function () {
 
 });
 
-var goodId = localStorage.getItem("goodsId");
-if (0 < goodId && goodId < 4) {
-    console.log($(".jia_gou_e")[goodId]);
-    $($(".jia_gou_e")[goodId]).addClass(" choose");
-    $.get('../data/goodsDetail.json', '', function (data) {
-        var thisObj = data[goodId-1];
-        console.log();
-        console.log(thisObj);
-        var tsDom = `
+function getDtailDom(goodId) {
+
+    if (0 <= goodId && goodId < 4) {
+        // console.log("f" + goodId);
+        $.get('../data/goodsDetail.json', '', function (data) {
+            var thisObj = data[goodId];
+            // console.log();
+            console.log(thisObj);
+            var tsDom = `
         <!-- 放大镜 -->
         <div class="pic_info">
             <a href="" class="img">
@@ -134,15 +134,15 @@ if (0 < goodId && goodId < 4) {
                         <div class="cuxiao_info choose_xilie clearBoth">
                             <div class="left1 float-l">关联商品</div>
                             <div class="rig float-l clearBoth">
-                                <a class="jia_gou_e" href="">
+                                <a class="jia_gou_e" href="javascript:void(0)">
                                     <img src="${thisObj.glsp[0].imgSrc}">
                                     <span> ${thisObj.glsp[0].name}</span>
                                 </a>
-                                <a class="jia_gou_e" href="">
+                                <a class="jia_gou_e" href="javascript:void(0)">
                                     <img src="${thisObj.glsp[1].imgSrc}">
                                     <span>${thisObj.glsp[1].name}</span>
                                 </a>
-                                <a class="jia_gou_e" href="">
+                                <a class="jia_gou_e" href="javascript:void(0)">
                                     <img src="${thisObj.glsp[2].imgSrc}">
                                     <span>${thisObj.glsp[2].name}</span>
                                 </a>
@@ -176,10 +176,18 @@ if (0 < goodId && goodId < 4) {
 
             </div>
         </div>
-
-
     `
-$(".product_main").html(tsDom);
-
-    })
+            $(".product_main").html(tsDom);
+            $($(".jia_gou_e")[goodId]).addClass("choose");
+        })
+    }
 }
+
+var goodId = localStorage.getItem("goodsId");
+console.log(goodId);
+getDtailDom(goodId - 1);
+
+$(".product_main").on("click", ".jia_gou_e", function () {
+    // console.log($(this).index());
+    getDtailDom($(this).index());
+})
