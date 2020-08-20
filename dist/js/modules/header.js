@@ -1,5 +1,17 @@
 // import '../../lib/jquery-2.1.4.js';
 
+/* 获取登录用户 */
+
+if ($.cookie('loginUser') !== "null") {
+    $(".ddnewhead_welcome").html(` <span>欢迎会员${$.cookie('loginUser')}
+<a class="login_link" href="./login.html">退出</a>
+`);
+}
+
+$(".login_link").click(function () {
+    $.cookie('loginUser', null);
+})
+
 //完成头部导航条hover效果
 $('.menu_box').mouseenter(function () {
     $(this).children().eq(0)[0].classList.add('hover');
@@ -34,10 +46,10 @@ $('.ddnewhead_area').mouseleave(function () {
 })
 
 // 输入框placeholder清空
-$(".search-ipt").focus(function(){
+$(".search-ipt").focus(function () {
     $(".search-placeholder").text("")
 })
-$(".search-ipt").blur(function(){
+$(".search-ipt").blur(function () {
     $(".search-placeholder").text("一往无前")
 })
 

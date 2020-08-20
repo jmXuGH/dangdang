@@ -25,13 +25,6 @@ task('sass', async () => {
     .pipe(load.connect.reload())
 })
 
-// 处理icon
-task('icon', async () => {
-  src('./iconfont/*.*')
-    .pipe(dest('./dist/iconfont'))
-    .pipe(load.connect.reload())
-})
-
 // 处理js
 task('js', async () => {
   src('./js/*.js')
@@ -90,4 +83,4 @@ task('connect', async () => {
 })
 
 // 构建开发包
-task('dev', series('delDist', 'image', 'sass','json', 'icon', 'js','modules','lib', 'html', 'connect', 'watch'))
+task('dev', series('delDist', 'image', 'sass','json', 'js','modules','lib', 'html', 'connect', 'watch'))

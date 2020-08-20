@@ -27,12 +27,18 @@ task('sass', async ()=>{
   .pipe(dest('./rev/css'))
 })
 
-// 处理icon
-task('icon', async () => {
-  src('./iconfont/*.*')
-    .pipe(dest('./dist/iconfont'))
-    .pipe(load.connect.reload())
+
+// 处理sass lib
+task('sasslib', async ()=>{
+  src('./sass/lib/*.scss')
+  .pipe(load.sass())
+  .pipe(load.rev())
+  .pipe(load.minifyCss())
+  .pipe(dest('./dist/css/lib'))
+  .pipe(load.rev.manifest())
+  .pipe(dest('./rev/css/lib'))
 })
+
 
 // 处理js
 task('js', async ()=>{
@@ -87,4 +93,4 @@ task('connect',async ()=>{
 })
 
 // 构建生产包
-task('build',series('delDist','image','sass','js','modules','lib','html','connect'))
+task('build',series('delDist','image','sass','sasslib','js','modules','lib','html','connect'))

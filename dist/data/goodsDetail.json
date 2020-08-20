@@ -1,6 +1,10 @@
 [
     {
-        "midImg": "http://img3m0.ddimg.cn/12/36/24182940-3_u_23.jpg",
+        "midImg": [
+            "../image/24182940-1_u_156.jpg",
+            "../image/24182940-2_u_86.jpg",
+            "../image/24182940-3_u_23.jpg"
+        ],
         "smImg": [
             "http://img3m0.ddimg.cn/12/36/24182940-1_x_156.jpg",
             "http://img3m0.ddimg.cn/12/36/24182940-2_x_86.jpg",
@@ -11,7 +15,7 @@
         "linkMsg": "读遍十方简，更多小说每满100减40>>",
         "writer": "[法] 圣-埃克苏佩里",
         "publish": "浙江文艺出版社",
-        "ptime": "2017年02月 ",
+        "ptime": "2017年02月",
         "pm": "68",
         "pl": "89331",
         "price": "16.90",
@@ -21,12 +25,12 @@
         "server": "由“当当”发货，并提供售后服务。 22:15前完成下单，预计明天(8月20日)可送达",
         "glsp": [
             {
-                "name": "父与子",
-                "imgSrc": "http://img3m6.ddimg.cn/90/8/25067286-1_x_53.jpg"
-            },
-            {
                 "name": "小王子",
                 "imgSrc": "http://img3m0.ddimg.cn/12/36/24182940-1_x_156.jpg"
+            },
+            {
+                "name": "父与子",
+                "imgSrc": "http://img3m6.ddimg.cn/90/8/25067286-1_x_53.jpg"
             },
             {
                 "name": "绿山墙的安妮",
@@ -35,13 +39,16 @@
         ]
     },
     {
-        "midImg": "http://img3m6.ddimg.cn/90/8/25067286-2_u_27.jpg",
-        "smImg": [
+        "midImg": [
+            "../image/25067286-1_u_53.jpg",
+            "../image/25067286-2_u_27.jpg",
+            "../image/25067286-3_u_17.jpg"
+        ],"smImg": [
             "http://img3m6.ddimg.cn/90/8/25067286-1_x_53.jpg",
             "http://img3m6.ddimg.cn/90/8/25067286-2_x_27.jpg",
-            "http://img3m6.ddimg.cn/90/8/25067286-3_x_17.jpg/*  */"
+            "http://img3m6.ddimg.cn/90/8/25067286-3_x_17.jpg"
         ],
-        "bigImg":"http://img3m6.ddimg.cn/90/8/25067286-1_u_53.jpg",
+        "bigImg": "http://img3m6.ddimg.cn/90/8/25067286-1_u_53.jpg",
         "msg": "作家榜经典：父与子全集(郑渊洁推荐版《父与子》，亲子共读常备书目！荣获10万+读者五星好评推荐版本！)",
         "detailMsg": "童话大王郑渊洁推荐版《父与子》！荣获2019当当动漫榜NO.1、2020当当好书榜动漫年中榜NO.1！138827名家长口碑力荐，好评如潮！认准作家榜，谨防山寨版！大星文化出品",
         "linkMsg": "读遍十方简，更多小说每满100减40>>",
@@ -57,12 +64,12 @@
         "server": "由“当当”发货，并提供售后服务。 22:15前完成下单，预计明天(8月20日)可送达",
         "glsp": [
             {
-                "name": "父与子",
-                "imgSrc": "http://img3m6.ddimg.cn/90/8/25067286-1_x_53.jpg"
-            },
-            {
                 "name": "小王子",
                 "imgSrc": "http://img3m0.ddimg.cn/12/36/24182940-1_x_156.jpg"
+            },
+            {
+                "name": "父与子",
+                "imgSrc": "http://img3m6.ddimg.cn/90/8/25067286-1_x_53.jpg"
             },
             {
                 "name": "绿山墙的安妮",
@@ -71,8 +78,11 @@
         ]
     },
     {
-        "midImg": "http://img3m1.ddimg.cn/17/21/25319861-3_u_19.jpg",
-        "smImg": [
+        "midImg": [
+            "../image/25319861-1_u_23.jpg",
+            "../image/25319861-2_u_21.jpg",
+            "../image/25067286-3_u_17.jpg"
+        ],"smImg": [
             "http://img3m1.ddimg.cn/17/21/25319861-1_x_23.jpg",
             "http://img3m1.ddimg.cn/17/21/25319861-2_x_21.jpg",
             "http://img3m1.ddimg.cn/17/21/25319861-3_x_19.jpg"
@@ -92,12 +102,12 @@
         "server": "由“当当”发货，并提供售后服务。 22:15前完成下单，预计明天(8月20日)可送达",
         "glsp": [
             {
-                "name": "父与子",
-                "imgSrc": "http://img3m6.ddimg.cn/90/8/25067286-1_x_53.jpg"
-            },
-            {
                 "name": "小王子",
                 "imgSrc": "http://img3m0.ddimg.cn/12/36/24182940-1_x_156.jpg"
+            },
+            {
+                "name": "父与子",
+                "imgSrc": "http://img3m6.ddimg.cn/90/8/25067286-1_x_53.jpg"
             },
             {
                 "name": "绿山墙的安妮",

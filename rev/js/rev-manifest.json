@@ -1,5 +1,8 @@
 {
-  "index.js": "index-b4e6ac014b.js",
-  "login.js": "login-a11922e9f0.js",
-  "main.js": "main-577564baf1.js"
+  "goodList.js": "goodList-a595c75c08.js",
+  "goodsDetail.js": "goodsDetail-fad6451cc2.js",
+  "index.js": "index-dc0466e180.js",
+  "login.js": "login-bad30e36d0.js",
+  "main.js": "main-577564baf1.js",
+  "reg.js": "reg-a9b8fa6549.js"
 }

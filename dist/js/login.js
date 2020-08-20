@@ -1,5 +1,5 @@
 import './lib/jquery-2.1.4.js';
-
+import './lib/jquery.cookie.js';
 /*公共部分：加载尾部*/
 $('#footer').load("./footer.html", function () {
     $('.footer_pic_new').css('display', 'none');
@@ -62,6 +62,8 @@ $(".password .pass").blur(function () {
     }
 })
 
+
+
 $(".password .pass").keyup(function () {
     if ($(this).val()) {
         $(".password .text_del").css("display", "block");
@@ -121,11 +123,20 @@ $(".Rotate-refresh").click(function () {
 })
 
 
+// 获取刚注册用户名
+if ($.cookie('regUser') !== "null") {
+    $(".username .user").val($.cookie('regUser'))
 
+}
 
+var us = $(".username .user").val();
+console.log(us);
+if (us) {
+    $(".username .placeholder").css("display", "none");
+}
 $("#submitLoginBtn").click(function () {
-    var url = "http://127.0.0.1:3456";
-    var us = $(".username .user").val();
+    var url = "http://47.94.232.14:6789";
+    us = $(".username .user").val();
     var ps = $(".password .pass").val();
     var strCode = ''
     $.each($('.Rotate-background'), function (i, l) {
@@ -136,10 +147,13 @@ $("#submitLoginBtn").click(function () {
         $.get(url + '/user/login', 'username=' + us + '&password=' + ps, function (data) {
             // console.log();
 
-            if (data.data) {
-                console.log(data.data);
+            if (data.data[0]) {
+                alert("登陆成功");
+                $.cookie('loginUser', us, { expires: 1 });
+                $.cookie('regUser', null);
+                window.open("./index.html")
             } else {
-                alert("账号或密码错误");
+                alert("账号不存在或密码错误");
             }
         }, 'json')
     } else {

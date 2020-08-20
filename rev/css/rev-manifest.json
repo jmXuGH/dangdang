@@ -1,7 +1,10 @@
 {
-  "footer.css": "footer-deb535eaec.css",
-  "header.css": "header-460a8ff2c3.css",
-  "index.css": "index-e0f245dc61.css",
-  "login.css": "login-143f5229db.css",
+  "footer.css": "footer-517e0a6351.css",
+  "goodList.css": "goodList-f3f38b6de0.css",
+  "goodsDetail.css": "goodsDetail-309bcac823.css",
+  "header.css": "header-dccc252fff.css",
+  "index.css": "index-bc95bbeb28.css",
+  "login.css": "login-203f6c3cb9.css",
+  "reg.css": "reg-88520c0c84.css",
   "reset.css": "reset-13e6c9dafd.css"
 }

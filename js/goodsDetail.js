@@ -10,7 +10,67 @@ $('#footer').load("./footer.html", function () {
     $('.footer_copyright_none').css('display', 'none');
 
 });
+function fdj(){
+    // 完成放大镜
+var left = $('.img')[0];
+var mask = $('.moveMask')[0];
+var maxBox = $('.big_pic')[0];
+var maxImg = $('.big_pic img')[0];
 
+$(".product_main").on('mouseenter' ,'.pic_info .img', function (){
+    mask.style.display = 'block';
+    maxBox.style.display = 'block';
+})
+$(".product_main").on('mouseleave' ,'.pic_info .img', function (){
+    mask.style.display = 'none';
+    maxBox.style.display = 'none';
+})
+
+
+
+// $(document).scroll(function(){
+//     // console.log(684684);
+//     mask.style.display = 'none';
+//     maxBox.style.display = 'none';
+// })
+
+
+$(".product_main").on('mousemove','.img', function (ev){
+    var e = ev || event;
+    // 蒙板的定位值
+    var maskX = e.pageX - $(left).offset().left - mask.clientWidth/2;
+    var maskY = e.pageY - $(left).offset().top - mask.clientHeight/2;
+
+    // 边界判断
+    if (maskX <= 0){
+        maskX = 0;
+    }
+    if (maskX >= (left.clientWidth - mask.clientWidth)) {
+        maskX = left.clientWidth - mask.clientWidth;
+    }
+    if (maskY <= 0){
+        maskY = 0;
+    }
+    if (maskY >= (left.clientHeight - mask.clientHeight)) {
+        maskY = left.clientHeight - mask.clientHeight;
+    }
+    mask.style.left = maskX + 'px';
+    mask.style.top = maskY + 'px';
+
+    // 移动比例
+    var scaleX = maskX / (left.clientWidth - mask.clientWidth);
+    var scaleY = maskY / (left.clientHeight - mask.clientHeight);
+
+    // 大图移动的坐标
+    var maxImgX = scaleX * (maxImg.clientWidth - maxBox.clientWidth);
+    var maxImgY = scaleY * (maxImg.clientHeight - maxBox.clientHeight);
+
+    maxImg.style.left = -maxImgX + 'px';
+    maxImg.style.top = -maxImgY + 'px';
+})
+
+}
+fdj();
 function getDtailDom(goodId) {
 
     if (0 <= goodId && goodId < 4) {
@@ -23,11 +83,15 @@ function getDtailDom(goodId) {
         <!-- 放大镜 -->
         <div class="pic_info">
             <a href="" class="img">
-                <img src="${thisObj.midImg}" alt="">
+                <img src="${thisObj.midImg[0]}" alt="">
                 <div class="moveMask">
 
                 </div>
             </a>
+            <div class="big_pic"  id="detailPicDiv">
+                    <img src="${thisObj.midImg[0]}" alt="中外历史故事+中外神话故事少年版 少年版中小学生课外读物儿童文学书 三国演义上下册 四大名著青之一
+            陕西师范大学出版社" height="800" width="800" id="detailPic">
+                </div>
             <div class="sale_lable">
                 <img src="../image/sale_picture.png" alt="">
                 <p class="cuxiao_word ">暑假季 好书跨店满99减10</p>
@@ -148,37 +212,19 @@ function getDtailDom(goodId) {
                                 </a>
                             </div>
                         </div>
-                        <!-- <div class="jiagou">
-                            <div class="addgoods">
-                                <div class="l_box">
-                                    1
-                                </div>
-                                <div class="r_box">
-                                    <p>+</p>
-                                    <p>-</p>
-                                </div>
-                            </div>
-                            <div class="jiagoubtn">
-
-                            </div>
-                            <div class="buybtn">
-
-                            </div>
-                        </div> -->
-
-
                     </div>
-
-
                 </div>
-
-
-
             </div>
         </div>
     `
             $(".product_main").html(tsDom);
             $($(".jia_gou_e")[goodId]).addClass("choose");
+            $(".product_main").on("mouseenter", ".dp_slide_box li", function () {
+                    // console.log($(this).index()) ;
+                    $(".img img").attr("src", thisObj.midImg[$(this).index()]);
+                    $(".big_pic img").attr("src", thisObj.midImg[$(this).index()]);
+            })
+            fdj();
         })
     }
 }
@@ -191,3 +237,17 @@ $(".product_main").on("click", ".jia_gou_e", function () {
     // console.log($(this).index());
     getDtailDom($(this).index());
 })
+
+
+$(".product_main").on("mouseenter", ".dp_slide_box li", function () {
+    if (goodId == 0) {
+        // console.log($(this).index());
+        $(".img img").attr("src", "../image/shbg" + $(this).index()+".jpg");
+        $(".big_pic img").attr("src", "../image/shbg" + $(this).index()+".jpg");
+    } 
+})
+
+
+
+
+

@@ -37,7 +37,8 @@
     .goods_detail_con .product_main .pic_info {
       float: left;
       width: 320px;
-      padding: 0 20px 30px 0; }
+      padding: 0 20px 30px 0;
+      position: relative; }
       .goods_detail_con .product_main .pic_info .img {
         display: block;
         width: 320px;
@@ -90,6 +91,22 @@
           .goods_detail_con .product_main .pic_info .dp_slide_box li img {
             width: 54px;
             height: 54px; }
+    .goods_detail_con .product_main .big_pic {
+      display: none;
+      border: 1px solid #f5f5f5;
+      position: absolute;
+      left: 320px;
+      top: 0;
+      width: 400px;
+      height: 400px;
+      overflow: hidden;
+      background: #fff;
+      text-align: center;
+      z-index: 20; }
+      .goods_detail_con .product_main .big_pic img {
+        width: 800px;
+        height: 800px;
+        position: absolute; }
     .goods_detail_con .product_main .show_info {
       float: left;
       width: 860px;

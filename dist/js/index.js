@@ -1,6 +1,8 @@
 import './lib/jquery-2.1.4.js';
+import './lib/jquery.cookie.js';
 /* 引入swiper */
 import './lib/swiper.js';
+
 
 /*渲染轮播图左侧菜单 */
 import fenlei from './modules/index_mod/fenlei.js'
@@ -33,7 +35,10 @@ $(document).scroll(function () {
 
 $(function () {
     /*公共部分：头部导航栏*/
-    $('#header').load("./header.html", function () { });
+    $('#header').load("./header.html", function () {
+
+        
+    });
 
     /*公共部分：加载尾部*/
     $('#footer').load("./footer.html", function () {
@@ -60,6 +65,8 @@ $(function () {
 
 
 })
+
+
 
 
 
@@ -327,22 +334,24 @@ var mySwipercs = new Swiper('.swiper-cs', {
 })
 
 $(".tab0 .bar").mouseenter(function () {
-    $(".hidden").next().css("display", "none");
-    $(".hidden").removeClass("hidden");
+    $(".tab0 .hidden").next().css("display", "none");
+    $(".tab0 .hidden").removeClass("hidden");
     $(this).next().css("display", "block")
     $(this).addClass("hidden");
 })
 $(".tab1 .bar").mouseenter(function () {
-    $(".hidden").next().css("display", "none");
-    $(".hidden").removeClass("hidden");
+    $(".tab1 .hidden").next().css("display", "none");
+    $(".tab1 .hidden").removeClass("hidden");
     $(this).next().css("display", "block")
     $(this).addClass("hidden");
 })
 var tabPre = 0;
 $(".book_right .head .tab li").mouseenter(function () {
-   $($(".book_right .head .tab li")[tabPre]).removeClass("on");
-   $(this).addClass("on");
-   $(".tab_con .tab" + tabPre).css("display","none");
-   $(".tab_con .tab" + $(this).index()).css("display","block");
+    $($(".book_right .head .tab li")[tabPre]).removeClass("on");
+    $(this).addClass("on");
+    $(".tab_con .tab" + tabPre).css("display", "none");
+    $(".tab_con .tab" + $(this).index()).css("display", "block");
     tabPre = $(this).index();
 })
+
+

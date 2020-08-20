@@ -1,5 +1,5 @@
 import './lib/jquery-2.1.4.js';
-
+import './lib/jquery.cookie.js';
 /*公共部分：加载尾部*/
 $('#footer').load("./footer.html", function () {
     $('.footer_pic_new').css('display', 'none');
@@ -63,7 +63,7 @@ $(".hqBtn").click(function () {
         $(".hqBtn").text(t);
         if (m < 0) {
             $(".hqBtn").text("获取短信验证码");
-            $(".hqBtn").attr("disable", false);
+            $(".hqBtn").attr("disabled", false);
 
             return;
         } else {
@@ -74,12 +74,12 @@ $(".hqBtn").click(function () {
         m--;
     }, 1000)
 })
-var url = "http://127.0.0.1:3456";
+var url = "http://47.94.232.14:6789";
 
 function getemyzm(mail) {
     $.get(url + '/user/getMailCode', 'mail=' + mail, function (data) {
         console.log(data);
-        alert (data.msg)
+        alert(data.msg)
     })
 }
 
@@ -115,7 +115,7 @@ $("#yzm").keyup(function () {
                     $(".hqBtn").text(t);
                     if (m <= 0) {
                         $(".hqBtn").text("获取短信验证码");
-                        $(".hqBtn").attr("disable", false);
+                        $(".hqBtn").attr("disabled", false);
                         return;
                     } else {
                         $(".hqBtn").attr("disabled", true);
@@ -131,7 +131,7 @@ $("#yzm").keyup(function () {
 })
 
 
-
+// 点击按钮完成注册
 $(".reg_btn").click(function () {
     var email = $("#email").val();
     var pass = $("#pass").val();
@@ -143,24 +143,26 @@ $(".reg_btn").click(function () {
         return;
     }
 
-    if(pass!==repass){
+    if (pass !== repass) {
         alert("两次密码不同");
         return;
     }
     if ($(".yzm_box").attr("isTrue")) {
-console.log(code);
         $.get(url + '/user/reg', 'mail=' + email + "&ps=" + pass + "&vcode=" + code, function (data) {
-            console.log(data);
-            console.log(data.msg);
+            // console.log(data);
+            // console.log(data.msg);
+            if(data.msg=="用户已存在"){
+                alert(data.msg);
+                return;
+            }
+            $.cookie('regUser', email, { expires: 1 });
             alert(data.msg);
+            open("./login.html")
         })
 
 
     } else {
         alert("图片验证码内容填写错误")
     }
-
-
-
 
 })
