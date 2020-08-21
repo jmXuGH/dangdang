@@ -571,8 +571,9 @@
       width: 203px;
       padding-top: 1px; }
       .miaosha_box .con_right_box .swiper-cs .swiper-pagination {
-        bottom: 470px !important;
-        left: 80px !important; }
+        width: 40px;
+        bottom: 470px;
+        left: 163px; }
       .miaosha_box .con_right_box .swiper-cs .swiper-pagination-bullet-active {
         color: #fff;
         background: #ff2832; }
