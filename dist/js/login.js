@@ -142,7 +142,7 @@ $("#submitLoginBtn").click(function () {
     $.each($('.Rotate-background'), function (i, l) {
         strCode += $(l).attr("truenum")
     })
-
+    if (strCode != trueCode) { alert("图片验证错误"); return false; }
     if (us && ps) {
         $.get(url + '/user/login', 'username=' + us + '&password=' + ps, function (data) {
             // console.log();
@@ -165,6 +165,6 @@ $("#submitLoginBtn").click(function () {
         $(".password i").css("background-position", "-14px -150px");
         $("#login_password_error").text("请输入你的密码").css("color", "#f44700");
         $("#user_mindstyle").text("请输入邮箱/昵称/手机号码").css("color", "#f44700");
-        if (strCode != trueCode) { alert("图片验证错误"); return false; }
+        
     }
 })

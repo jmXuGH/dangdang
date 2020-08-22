@@ -1,8 +1,8 @@
 // import '../../lib/jquery-2.1.4.js';
 
 /* 获取登录用户 */
-
-if ($.cookie('loginUser') !== "null") {
+console.log($.cookie('loginUser'));
+if ($.cookie('loginUser') !== "null" && $.cookie('loginUser')) {
     $(".ddnewhead_welcome").html(` <span>欢迎会员${$.cookie('loginUser')}
 <a class="login_link" href="./login.html">退出</a>
 `);
