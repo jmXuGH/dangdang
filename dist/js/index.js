@@ -37,7 +37,7 @@ $(function () {
     /*公共部分：头部导航栏*/
     $('#header').load("./header.html", function () {
 
-        
+
     });
 
     /*公共部分：加载尾部*/
@@ -355,3 +355,13 @@ $(".book_right .head .tab li").mouseenter(function () {
 })
 
 
+/* 右边fied   bar */
+$(".sidebar_top_wrap a").hover(function () {
+    $(this).find("span").css("display", "block").stop(true).animate({ left: '-79px' }, 300);
+}, function () {
+    $(this).find("span").stop(true).animate({ left: '0px' }, 300).css("display", "none");
+})
+
+$(".back_top").click(function () {
+    $(document.documentElement).animate({scrollTop: "0px"}, 500);
+})
