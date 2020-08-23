@@ -143,6 +143,10 @@ $("#submitLoginBtn").click(function () {
         strCode += $(l).attr("truenum")
     })
     if (strCode != trueCode) { alert("图片验证错误"); return false; }
+    var mailReg = /^\w{2,18}@[0-9a-z]{1,10}(\.[a-z]{2,3}){1,2}$/
+    if (!mailReg.test(us)) {
+        alert("邮箱格式不符合");
+    }
     if (us && ps) {
         $.get(url + '/user/login', 'username=' + us + '&password=' + ps, function (data) {
             // console.log();

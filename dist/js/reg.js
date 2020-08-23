@@ -138,6 +138,10 @@ $(".reg_btn").click(function () {
     var repass = $("#repass").val();
     var code = $("#emyzm").val();
     var check = $(".check")[0].checked;
+    var mailReg = /^\w{2,18}@[0-9a-z]{1,10}(\.[a-z]{2,3}){1,2}$/
+    if (!mailReg.test(email)) {
+        alert("邮箱格式不符合");
+    }
     if (!email || !pass || !repass || !code || !check) {
         alert("所有表单均为必填项");
         return;
@@ -151,7 +155,7 @@ $(".reg_btn").click(function () {
         $.get(url + '/user/reg', 'mail=' + email + "&ps=" + pass + "&vcode=" + code, function (data) {
             // console.log(data);
             // console.log(data.msg);
-            if(data.msg=="用户已存在"){
+            if (data.msg == "用户已存在") {
                 alert(data.msg);
                 return;
             }
